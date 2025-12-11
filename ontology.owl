@@ -1,0 +1,3410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/finrisk#FinancialRiskOntology#"
+     xml:base="http://example.org/finrisk#FinancialRiskOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://example.org/finrisk#FinancialRiskOntology">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+        <terms:creator>Nizar Al-Ahmad et al.</terms:creator>
+        <terms:description>Extends selected FIBO concepts for mortgage and financial risk modelling (ISO 31000–aligned).</terms:description>
+        <terms:source>EDMC Financial Industry Business Ontology (FIBO)</terms:source>
+        <rdfs:comment>Ontology for organisational structure, financial risks, and mortgage product lifecycle.</rdfs:comment>
+        <rdfs:comment>This ontology reuses and extends concepts from the EDMC FIBO ontologies.</rdfs:comment>
+        <rdfs:label>Financial Risk and Mortgage Ontology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://spec.edmcouncil.org/fibo/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#pattern -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#pattern"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gDay -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/finrisk#Controls -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#Controls">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#controlledBy"/>
+        <rdfs:label>controls</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#RiskAssessedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#RiskAssessedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#assessesRisk"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskAssessment"/>
+        <rdfs:label>risk assessed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#aRiskTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#aRiskTo">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#hasRiskSource"/>
+        <rdfs:label>a risk to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#actionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#actionOf">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#hasAction"/>
+        <rdfs:label>action of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#applicantOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#applicantOf">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#hasApplicant"/>
+        <rdfs:label>applicant of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#applicationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#applicationOf">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#hasApplication"/>
+        <rdfs:label>application of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#assessedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#assessedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#assesses"/>
+        <rdfs:label>assessed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#assesses -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#assesses">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ValueAssessment"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:label>assesses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#assessesRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#assessesRisk">
+        <rdfs:label>assesses risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#assetRecoveredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#assetRecoveredBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#recoversAsset"/>
+        <rdfs:label>asset recovered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#belongsTo">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanSchedule"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:label>belongs to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#causesRiskSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#causesRiskSource">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#riskCausedBy"/>
+        <rdfs:label>causes risk source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#changedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#changedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#changes"/>
+        <rdfs:label>changed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#changes -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#changes">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#DocumentCheck"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskLevel"/>
+        <rdfs:label>changes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#closedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#closedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#closes"/>
+        <rdfs:label>closed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#closes -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#closes">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ForeclosureEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>closes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#collateralOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#collateralOf">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#holdsCollateral"/>
+        <rdfs:label>collateral of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#concernedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#concernedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#concerns"/>
+        <rdfs:label>concerned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#concerns -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#concerns">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>concerns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#controlledBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#controlledBy">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>controlled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#coveredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#coveredBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#covers"/>
+        <rdfs:label>covered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#covers -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#covers">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#PurchaseInsurance"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#MortgageRisk"/>
+        <rdfs:label>covers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#decreasedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#decreasedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#decreases"/>
+        <rdfs:label>decreased by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#decreases -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#decreases">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#CreditBalance"/>
+        <rdfs:label>decreases</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#definedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#definedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#definesPayment"/>
+        <rdfs:label>defined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#definesPayment -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#definesPayment">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanSchedule"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:label>defines payment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#guarantees -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#guarantees">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#hasGuarantor"/>
+        <rdfs:label>guarantees</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasAccountHolder -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasAccountHolder">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#holdsAccount"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Person"/>
+        <rdfs:label>has account holder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasAction -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasAction">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>has action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasAmortisationType -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasAmortisationType">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Amortisation"/>
+        <rdfs:label>has amortisation type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasApplicant -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasApplicant">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Person"/>
+        <rdfs:label>has applicant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasApplication -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasApplication">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Mortgage"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:label>has application</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasArrears -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasArrears">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Arrears"/>
+        <rdfs:label>has arrears</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasBalance -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasBalance">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#CreditBalance"/>
+        <rdfs:label>has balance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasExpenses -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasExpenses">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Borrower"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Expenses"/>
+        <rdfs:label>has expenses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasGuarantor -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasGuarantor">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Person"/>
+        <rdfs:label>has guarantor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasID -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasID">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#idOf"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Person"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#IdentityDocument"/>
+        <rdfs:label>has ID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasIncome -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasIncome">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Borrower"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Income"/>
+        <rdfs:label>has income</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasLiability -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasLiability">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Borrower"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Liability"/>
+        <rdfs:label>has liability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasLocation">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#locatedAt"/>
+        <rdfs:label>has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasNextStage -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasNextStage">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>has next stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasPreviousStage -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasPreviousStage">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>has previous stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasRisk">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#isRiskOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:label>has risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasRiskLevel -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasRiskLevel">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#levelOfRisk"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskLevel"/>
+        <rdfs:label>has risk level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasRiskSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasRiskSource">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>has risk source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasRole -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasRole">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#roleOf"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Person"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Role"/>
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasStage -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasStage">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#FinancialProduct"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>has stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#hasTreatment -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#hasTreatment">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#treatedBy"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:label>has treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#holdsAccount -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#holdsAccount">
+        <rdfs:label>holds account</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#holdsCollateral -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#holdsCollateral">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:label>holds collateral</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#idOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#idOf">
+        <rdfs:label>ID of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#implementedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#implementedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#implements"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>implemented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#implements -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#implements">
+        <rdfs:label>implements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#inStage -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#inStage">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>in stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#increasedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#increasedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#increases"/>
+        <rdfs:label>increased by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#increases -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#increases">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>increases</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#involves -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#involves">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#stepOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>involves</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#isRiskOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#isRiskOf">
+        <rdfs:label>is risk of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#issuedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#issuedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#issues"/>
+        <rdfs:label>issued by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#issuedByInsurer -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#issuedByInsurer">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#PurchaseInsurance"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#InsuranceCompany"/>
+        <rdfs:label>issued by (insurance)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#issuedByOrg -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#issuedByOrg">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#orgIssues"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ContractDocument"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:label>issued by organisation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#issues -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#issues">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ValueAssessment"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#AssessmentReport"/>
+        <rdfs:label>issues</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#levelOfRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#levelOfRisk">
+        <rdfs:label>level of risk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#locatedAt -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#locatedAt">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Address"/>
+        <rdfs:label>located at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#offersProduct -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#offersProduct">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#productOfferedBy"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#FinancialProduct"/>
+        <rdfs:label>offers product</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#openedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#openedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#opens"/>
+        <rdfs:label>opened by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#opens -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#opens">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:label>opens</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#orgIssues -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#orgIssues">
+        <rdfs:label>organisation issues</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#ownedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#ownedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#owns"/>
+        <rdfs:label>owned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#owns -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#owns">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Person"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:label>owns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#paidBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#paidBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#pays"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:label>paid by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#pays -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#pays">
+        <rdfs:label>pays</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#productOfferedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#productOfferedBy">
+        <rdfs:label>product offered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#providedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#providedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#provides"/>
+        <rdfs:label>provided by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#provides -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#provides">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#PropertyInspection"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#ValueAssessment"/>
+        <rdfs:label>provides</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#receivesTransfer -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#receivesTransfer">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#transfersTo"/>
+        <rdfs:label>receives transfer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#recommendsTreatment -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#recommendsTreatment">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#treatmentRecommendedBy"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#RiskAssessment"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:label>recommends treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#recoversAsset -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#recoversAsset">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ForeclosureEvent"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:label>recovers asset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#requiredFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#requiredFor">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#requires"/>
+        <rdfs:label>required for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#requires -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#requires">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>requires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#riskCausedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#riskCausedBy">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>risk caused by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#roleOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#roleOf">
+        <rdfs:label>role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#signedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#signedBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#signs"/>
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ContractDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>signed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#signs -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#signs">
+        <rdfs:label>signs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#startsContract -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#startsContract">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:label>starts contract</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#stepOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#stepOf">
+        <rdfs:label>step of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#transfersTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#transfersTo">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:range rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:label>transfers to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#treatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#treatedBy">
+        <rdfs:label>treated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#treatmentRecommendedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#treatmentRecommendedBy">
+        <rdfs:label>treatment recommended by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#triggeredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#triggeredBy">
+        <owl:inverseOf rdf:resource="http://example.org/finrisk#triggers"/>
+        <rdfs:label>triggered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/finrisk#triggers -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.org/finrisk#triggers">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>triggers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/finrisk#accountStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#accountStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#actualPrincipal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#actualPrincipal">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#applicationID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#applicationID">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#applicationStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#applicationStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#arrearsLimitCount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#arrearsLimitCount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#assessedValueAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#assessedValueAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ValueAssessment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#balanceAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#balanceAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#birthDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#birthDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#BirthCertificate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#branchID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#branchID">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Bank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#city -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#city">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#combinedLoanToValueRatio -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#combinedLoanToValueRatio">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#contractStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#contractStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#country -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#country">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#coverageAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#coverageAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#PurchaseInsurance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#creditCheckStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#creditCheckStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#CreditCheck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#currentInterest -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#currentInterest">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#debtToIncomeRatio -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#debtToIncomeRatio">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#documentCheckStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#documentCheckStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#DocumentCheck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#downPayment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#downPayment">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#dueDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#dueDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#expenseAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#expenseAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Expenses"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#expiryDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#expiryDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LegalDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#firstName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#firstName">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#IdentityDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#firstPaymentDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#firstPaymentDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#idNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#idNumber">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#impact -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#impact">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#incomeAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#incomeAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Income"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#interestRate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#interestRate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Interest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#interestStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#interestStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Interest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#issueDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#issueDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LegalDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#lastName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#lastName">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#IdentityDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#liabilityAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#liabilityAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Liability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#likelihood -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#likelihood">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#limitCount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#limitCount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Arrears"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#loanAgeMonth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#loanAgeMonth">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#loanBalanceAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#loanBalanceAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#loanID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#loanID">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#loanPurpose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#loanPurpose">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#loanTermMonths -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#loanTermMonths">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#loanToValueRatio -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#loanToValueRatio">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#marketValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#marketValue">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#maturityDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#maturityDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#missedCount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#missedCount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Arrears"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#mortgageInterestRate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#mortgageInterestRate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#orgName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#orgName">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#orgType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#orgType">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#passportNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#passportNumber">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Passport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#paymentDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#paymentDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#paymentHistoryCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#paymentHistoryCode">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#paymentID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#paymentID">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#postalCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#postalCode">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#prepayPenalty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#prepayPenalty">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#principalAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#principalAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageContract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#recordCheckStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#recordCheckStatus">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#RecordCheck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#remainingCredit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#remainingCredit">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanSchedule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#remainingTerm -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#remainingTerm">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#LoanAccount"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#requestedAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#requestedAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#requiredAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#requiredAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#ForeclosureEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#riskScore -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#riskScore">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#scheduledPrincipal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#scheduledPrincipal">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#street -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#street">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#totalPrincipal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#totalPrincipal">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#transactionAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#transactionAmount">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#transactionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#transactionDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/finrisk#valuationDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.org/finrisk#valuationDate">
+        <rdfs:domain rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/finrisk#AcceptRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AcceptRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:label>Accept Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Account -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Account">
+        <rdfs:comment>Container for records associated with a business arrangement for regular transactions and services. In general, account will have a subclass that represents the account type and will be related to a person who is the account holder; it will have an account number, balance and interest rate associated with it.</rdfs:comment>
+        <rdfs:label>Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AccountStatement -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AccountStatement">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Record"/>
+        <rdfs:comment>Periodic summary of account activity for a given period of time.</rdfs:comment>
+        <rdfs:label>Account Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Address -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Address">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Location"/>
+        <rdfs:comment>A structured set of information that describes the location of a place or property, typically including street, city, postal code, and country.</rdfs:comment>
+        <rdfs:label>Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AdjustInterestRate -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AdjustInterestRate">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Adjust Interest Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AgreementDocument -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AgreementDocument">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LegalDocument"/>
+        <rdfs:comment>A legal document used to verify an agreement between two or more parties.</rdfs:comment>
+        <rdfs:label>Agreement Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Amortisation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Amortisation">
+        <rdfs:comment>A structured process of repaying a loan or debt over time through scheduled periodic payments that cover interest and typically portions of the principal amount.</rdfs:comment>
+        <rdfs:label>Amortisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ApplicationRejection -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ApplicationRejection">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Application Rejection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ApplicationStage -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ApplicationStage">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>Application Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Arrears -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Arrears">
+        <rdfs:comment>The state of being behind in fulfilling financial obligations, such as missed or overdue loan or mortgage payments.</rdfs:comment>
+        <rdfs:label>Arrears</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ArrearsLimitExceeded -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ArrearsLimitExceeded">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Arrears Limit Exceeded</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ArrearsRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ArrearsRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The risk that accumulated unpaid obligations or overdue payments lead to loan delinquency, legal action, or foreclosure.</rdfs:comment>
+        <rdfs:label>Arrears Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AssessmentEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AssessmentEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Occurrence"/>
+        <rdfs:comment>Event involving the evaluation or estimation of the nature, quality, or ability of someone or something.</rdfs:comment>
+        <rdfs:label>Assessment Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AssessmentReport -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AssessmentReport">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Report"/>
+        <rdfs:comment>A report indicating the details of an assessed asset and its estimated value and condition.</rdfs:comment>
+        <rdfs:label>Assessment Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Asset -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Asset">
+        <rdfs:comment>Something of economic value owned or controlled by an entity that is expected to provide future benefit.</rdfs:comment>
+        <rdfs:label>Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AssetRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AssetRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The risk of financial loss arising from the reduction in value, impairment, or loss of an asset used as collateral for a mortgage or loan.</rdfs:comment>
+        <rdfs:label>Asset Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#AvoidRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#AvoidRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:label>Avoid Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#BadRecord -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#BadRecord">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Bad Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Balance -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Balance">
+        <rdfs:comment>A quantified statement of the amount of money held in an account at a given point in time, representing either a credit or debit position.</rdfs:comment>
+        <rdfs:label>Balance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#BalloonAmortisation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#BalloonAmortisation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Amortisation"/>
+        <rdfs:label>Balloon Amortisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Bank -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Bank">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:comment>The commercial name of the organisational body of the institute.</rdfs:comment>
+        <rdfs:label>Bank</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#BirthCertificate -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#BirthCertificate">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Certificate"/>
+        <rdfs:comment>Original document certifying the circumstances of the birth, or a certified copy or representation of the ensuing registration of that birth.</rdfs:comment>
+        <rdfs:label>Birth Certificate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Bond -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Bond">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#FinancialInstrument"/>
+        <rdfs:comment>A debt security under which the issuer owes the holders a debt and is obliged to pay interest and repay the principal at a later date, known as maturity.</rdfs:comment>
+        <rdfs:label>Bond</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Borrower -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Borrower">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Role"/>
+        <rdfs:comment>A party that receives money or other assets under a loan agreement and is obligated to repay them under specified terms.</rdfs:comment>
+        <rdfs:label>Borrower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#BusinessUnit -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#BusinessUnit">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:comment>A part of an organisational structure where financial operations are made.</rdfs:comment>
+        <rdfs:label>Business Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Calculation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Calculation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Occurrence"/>
+        <rdfs:comment>Actual execution of some computation or operation that was scheduled or triggered by something.</rdfs:comment>
+        <rdfs:label>Calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Certificate -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Certificate">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Document"/>
+        <rdfs:comment>Document attesting to the truth of some fact or set of facts.</rdfs:comment>
+        <rdfs:label>Certificate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ContractDocument -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ContractDocument">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LegalDocument"/>
+        <rdfs:comment>Legal document that records the formal terms and conditions of some contract.</rdfs:comment>
+        <rdfs:label>Contract Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ContractTermination -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ContractTermination">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Contract Termination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ControlAction -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ControlAction">
+        <rdfs:comment>An intentional act or measure taken to influence, adjust, or manage a financial process, risk, or contractual condition.</rdfs:comment>
+        <rdfs:label>Control Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#CreditBalance -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#CreditBalance">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Balance"/>
+        <rdfs:label>Credit Balance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#CreditCardAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#CreditCardAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LoanOrCreditAccount"/>
+        <rdfs:comment>An account maintained by a financial institution that records transactions and credit extended to a cardholder under a revolving line of credit, including purchases, repayments, interest, and fees.</rdfs:comment>
+        <rdfs:label>Credit Card Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#CreditCheck -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#CreditCheck">
+        <rdfs:comment>An evaluation of a borrower’s credit history and financial reliability conducted to assess their ability to repay a loan or mortgage.</rdfs:comment>
+        <rdfs:label>Credit Check</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#CreditCheckRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#CreditCheckRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The risk associated with incorrect or incomplete assessment of a borrower&apos;s creditworthiness, leading to potential default or mispricing of credit.</rdfs:comment>
+        <rdfs:label>Credit Check Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#CreditScore -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#CreditScore">
+        <rdfs:comment>A numerical expression derived from a borrower’s credit information that represents their creditworthiness and likelihood of meeting debt obligations.</rdfs:comment>
+        <rdfs:label>Credit Score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Currency -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Currency">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#FinancialInstrument"/>
+        <rdfs:comment>A system of money in common use, typically issued by a government or monetary authority, serving as a medium of exchange and unit of account.</rdfs:comment>
+        <rdfs:label>Currency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DeathCertificate -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DeathCertificate">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Certificate"/>
+        <rdfs:comment>Original document certifying the circumstances of the death, or a certified copy or representation of the ensuing registration of that death.</rdfs:comment>
+        <rdfs:label>Death Certificate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DebtBalance -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DebtBalance">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Balance"/>
+        <rdfs:label>Debt Balance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DefaultNotice -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DefaultNotice">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Notice"/>
+        <rdfs:comment>A notice given to a person before taking over an asset to recover the loan account, indicating failure to make required payments for a number of times.</rdfs:comment>
+        <rdfs:label>Default Notice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DefaultRecoveryStage -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DefaultRecoveryStage">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>Default Recovery Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DegradationInAssetValue -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DegradationInAssetValue">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Degradation In Asset Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DelinquencyStatus -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DelinquencyStatus">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:comment>A lifecycle stage representing that the loan is past due or in arrears, but not yet fully resolved or recovered.</rdfs:comment>
+        <rdfs:label>Delinquency Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DepositAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DepositAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#InvestmentOrDepositAccount"/>
+        <rdfs:comment>Account that provides a record of money placed with a depository institution for safekeeping and management.</rdfs:comment>
+        <rdfs:label>Deposit Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Derivative -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Derivative">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#FinancialInstrument"/>
+        <rdfs:comment>A financial instrument whose value is derived from the value of one or more underlying assets, rates, or indices.</rdfs:comment>
+        <rdfs:label>Derivative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Document -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Document">
+        <rdfs:comment>Unitary expression of some realization of an intellectual or artistic work. A document, especially a legal document, may serve to establish one or several facts, and can be relied upon as a proof thereof.</rdfs:comment>
+        <rdfs:label>Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DocumentCheck -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DocumentCheck">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#CreditCheck"/>
+        <rdfs:comment>A verification process confirming the authenticity, completeness, and validity of submitted identification and financial documents in a mortgage or loan application.</rdfs:comment>
+        <rdfs:label>Document Check</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DocumentCheckRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DocumentCheckRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The risk arising from inaccurate, falsified, or incomplete documentation provided during the mortgage or loan verification process.</rdfs:comment>
+        <rdfs:label>Document Check Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DriverLicence -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DriverLicence">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#IdentityDocument"/>
+        <rdfs:comment>Official document stating that a person may operate a motorized vehicle on a public roadway or provides official identifying information for a non-driver.</rdfs:comment>
+        <rdfs:label>Driver Licence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#DuePayment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#DuePayment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:comment>A payment that was made on or before its due date.</rdfs:comment>
+        <rdfs:label>Due Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#EarlyPayment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#EarlyPayment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:comment>A payment that was made before the due date.</rdfs:comment>
+        <rdfs:label>Early Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Expenses -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Expenses">
+        <rdfs:comment>Recurring or one-off monetary outflows incurred by a borrower or entity, such as living costs, debt repayments, or other financial obligations that reduce disposable income.</rdfs:comment>
+        <rdfs:label>Expenses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Exposure -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Exposure">
+        <rdfs:comment>A state or condition in which an entity is subject to potential loss, harm, or risk due to its involvement in or relationship with another entity, activity, or event.</rdfs:comment>
+        <rdfs:label>Exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FX -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FX">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#FinancialProduct"/>
+        <rdfs:comment>The exchange of one currency for another, typically conducted through spot or derivative transactions in the foreign exchange market.</rdfs:comment>
+        <rdfs:label>Foreign Exchange (FX)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FeePayment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FeePayment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:comment>Payment of fees or charges.</rdfs:comment>
+        <rdfs:label>Fee Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FinancialExposure -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FinancialExposure">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Exposure"/>
+        <rdfs:comment>The extent to which a party is subject to potential monetary loss arising from market movements, credit events, liquidity changes, or other financial risks.</rdfs:comment>
+        <rdfs:label>Financial Exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FinancialInstrument -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FinancialInstrument">
+        <rdfs:comment>A contractual arrangement that represents a financial asset to one party and a financial liability or equity instrument to another.</rdfs:comment>
+        <rdfs:label>Financial Instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FinancialProduct -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FinancialProduct">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Product"/>
+        <rdfs:comment>Product provided to consumers and businesses by a depository institution.</rdfs:comment>
+        <rdfs:label>Financial Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FinancialRecord -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FinancialRecord">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Record"/>
+        <rdfs:comment>A summary of all previous financial record for a person.</rdfs:comment>
+        <rdfs:label>Financial Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FixedAmortisation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FixedAmortisation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Amortisation"/>
+        <rdfs:label>Fixed Amortisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FixedInterest -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FixedInterest">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Interest"/>
+        <rdfs:label>Fixed Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ForeclosureEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ForeclosureEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Occurrence"/>
+        <rdfs:comment>An event indicating taking over an asset due to failure of a number of payments.</rdfs:comment>
+        <rdfs:label>Foreclosure Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#FraudulentDocument -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#FraudulentDocument">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Fraudulent Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Guarantor -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Guarantor">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Role"/>
+        <rdfs:comment>A party that undertakes to fulfil the obligations of a borrower if that borrower fails to do so under the terms of a financial contract.</rdfs:comment>
+        <rdfs:label>Guarantor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#HighRiskLevel -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#HighRiskLevel">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskLevel"/>
+        <rdfs:label>High Risk Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#IdentityDocument -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#IdentityDocument">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LegalDocument"/>
+        <rdfs:comment>Any legal document which may be used to verify aspects of a person&apos;s identity.</rdfs:comment>
+        <rdfs:label>Identity Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Income -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Income">
+        <rdfs:comment>Any monetary amount received by an individual or entity from employment, investments, financial products, or other sources within a defined period. A key attribute influencing affordability, repayment capacity, and exposure to credit risk.</rdfs:comment>
+        <rdfs:label>Income</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#IncreaseCollateral -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#IncreaseCollateral">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Increase Collateral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#IndexedInterest -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#IndexedInterest">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Interest"/>
+        <rdfs:label>Indexed Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InsecureApplication -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InsecureApplication">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Insecure Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InsuranceCompany -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InsuranceCompany">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Organisation"/>
+        <rdfs:comment>A financial institution that provides insurance services by underwriting risk in exchange for premiums, and compensates policyholders or beneficiaries in the event of specified losses or events.</rdfs:comment>
+        <rdfs:label>Insurance Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Interest -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Interest">
+        <rdfs:comment>A charge for the use of borrowed money, typically expressed as a percentage of the principal amount over a specified period.</rdfs:comment>
+        <rdfs:label>Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InterestOnlyAmortisation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InterestOnlyAmortisation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Amortisation"/>
+        <rdfs:label>Interest Only Amortisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InterestRateCalculation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InterestRateCalculation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Calculation"/>
+        <rdfs:comment>Event reflecting the calculation of interest.</rdfs:comment>
+        <rdfs:label>Interest Rate Calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InterestRateReset -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InterestRateReset">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Calculation"/>
+        <rdfs:comment>Event reflecting a potential adjustment to an interest rate, typically corresponding to a change in the underlying benchmark interest rate or index specified in the contract.</rdfs:comment>
+        <rdfs:label>Interest Rate Reset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InvestmentAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InvestmentAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#InvestmentOrDepositAccount"/>
+        <rdfs:comment>Account that provides a record of deposits of funds and/or securities held at a financial institution. Objectives are typically long term growth, income or capital preservation from the deposited asset portfolio; investment accounts are typically not insured.</rdfs:comment>
+        <rdfs:label>Investment Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#InvestmentOrDepositAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#InvestmentOrDepositAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:label>Investment or Deposit Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LatePayment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LatePayment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:comment>A payment that was made after the indicated due date.</rdfs:comment>
+        <rdfs:label>Late Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LatePaymentEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LatePaymentEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Late Payment Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LatePaymentRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LatePaymentRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The risk that a borrower delays scheduled payments beyond their due date, causing potential penalties, interest accumulation, or credit score degradation.</rdfs:comment>
+        <rdfs:label>Late Payment Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LedgerAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LedgerAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:comment>Account recorded in a general ledger.</rdfs:comment>
+        <rdfs:label>Ledger Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LegalDocument -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LegalDocument">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Document"/>
+        <rdfs:comment>Document specifying the terms of, or providing evidence for, an agreement, attestation, certification, conditions, permissions, and/or decisions of legal persons, government entities, or courts of law.</rdfs:comment>
+        <rdfs:label>Legal Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Liability -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Liability">
+        <rdfs:comment>A financial obligation or debt owed by a borrower or entity to another party, requiring future payments of cash, goods, or services.</rdfs:comment>
+        <rdfs:label>Liability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LifeCycleStage -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LifeCycleStage">
+        <rdfs:comment>A distinct phase in the operational, contractual, or financial life of a product or service that delineates its status, activities, and responsibilities within an overall process.</rdfs:comment>
+        <rdfs:label>Life Cycle Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LoanAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LoanAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LoanOrCreditAccount"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#hasBalance"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#CreditBalance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#hasArrears"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#Arrears"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An account established by a lender to record the principal, interest, and payment history associated with a specific loan granted to a borrower.</rdfs:comment>
+        <rdfs:label>Loan Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LoanOrCreditAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LoanOrCreditAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:label>Loan or Credit Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LoanSchedule -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LoanSchedule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#belongsTo"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#MortgageContract"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A structured plan that specifies the sequence, timing, and amount of payments required to repay a loan or mortgage.</rdfs:comment>
+        <rdfs:label>Loan Schedule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LoanServicing -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LoanServicing">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Occurrence"/>
+        <rdfs:comment>The ongoing management of the loan between disbursement and payoff.</rdfs:comment>
+        <rdfs:label>Loan Servicing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Location -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Location">
+        <rdfs:comment>A geographical place or position that can be identified within a spatial reference system.</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#LowRiskLevel -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#LowRiskLevel">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskLevel"/>
+        <rdfs:label>Low Risk Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MediumRiskLevel -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MediumRiskLevel">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskLevel"/>
+        <rdfs:label>Medium Risk Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MissedPayment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MissedPayment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Payment"/>
+        <rdfs:comment>A payment that was not made.</rdfs:comment>
+        <rdfs:label>Missed Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MissingPaymentEvent -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MissingPaymentEvent">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskSource"/>
+        <rdfs:label>Missing Payment Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MissingPaymentRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MissingPaymentRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The risk that a borrower fails to make one or more required loan or mortgage payments, resulting in arrears or default.</rdfs:comment>
+        <rdfs:label>Missing Payment Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MitigateRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MitigateRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:label>Mitigate Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Mortgage -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Mortgage">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#FinancialProduct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#hasApplication"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#MortgageApplication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A loan secured by real property, under which the borrower gives the lender a lien on the property as collateral for the debt.</rdfs:comment>
+        <rdfs:label>Mortgage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MortgageApplication -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MortgageApplication">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#hasApplicant"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A formal request submitted by a borrower to a lender for a mortgage loan, including personal, financial, and property information used in credit and risk assessment.</rdfs:comment>
+        <rdfs:label>Mortgage Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MortgageContract -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MortgageContract">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ContractDocument"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#holdsCollateral"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#Asset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#opens"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#LoanAccount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A contract document detailing the contract for a mortgage, including parties, upfront payment, interest rate, late payment fees, arrears allowed before foreclose, start date, end date and collateral.</rdfs:comment>
+        <rdfs:label>Mortgage Contract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#MortgageRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#MortgageRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Risk"/>
+        <rdfs:comment>The potential for financial loss or adverse impact associated with a mortgage agreement, including credit, property, and payment-related uncertainties.</rdfs:comment>
+        <rdfs:label>Mortgage Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#NegativeAmortisation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#NegativeAmortisation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Amortisation"/>
+        <rdfs:label>Negative Amortisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Notice -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Notice">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Document"/>
+        <rdfs:comment>Announcement, communication, intimation, or advance warning of something, usually, but not necessarily, to allow preparations to be made.</rdfs:comment>
+        <rdfs:label>Notice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Occurrence -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Occurrence">
+        <rdfs:comment>Happening of an Occurrence Kind, i.e., an event.</rdfs:comment>
+        <rdfs:label>Occurrence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Organisation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Organisation">
+        <rdfs:comment>A large body of smaller institutes responsible for financial operations.</rdfs:comment>
+        <rdfs:label>Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Passport -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Passport">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#IdentityDocument"/>
+        <rdfs:comment>Formal identity document, issued by a national government, which certifies the identity and nationality of its holder for the purpose of international travel.</rdfs:comment>
+        <rdfs:label>Passport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Payment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Payment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Transaction"/>
+        <rdfs:comment>Delivery of money in fulfilment of an obligation, such as to satisfy a claim or debt.</rdfs:comment>
+        <rdfs:label>Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#PaymentAccount -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#PaymentAccount">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Account"/>
+        <rdfs:comment>An account used to execute payment transactions, such as the deposit and withdrawal of funds, and to store money available for immediate use through instruments like debit cards, transfers, or direct debits.</rdfs:comment>
+        <rdfs:label>Payment Account</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Person -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/finrisk#hasID"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/finrisk#IdentityDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A human being considered as an individual legal or natural person capable of entering into agreements and holding rights or obligations.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Product -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Product">
+        <rdfs:comment>Commercially distributed good that is tangible property, the output of a production process, or something that passes through a distribution channel before being consumed or used.</rdfs:comment>
+        <rdfs:label>Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Property -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Property">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Asset"/>
+        <rdfs:comment>A tangible or intangible thing owned by a person or organization, over which ownership rights or interests are held.</rdfs:comment>
+        <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#PropertyInspection -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#PropertyInspection">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#AssessmentEvent"/>
+        <rdfs:comment>Event that involves analysing one or more aspects of a real property.</rdfs:comment>
+        <rdfs:label>Property Inspection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#PurchaseInsurance -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#PurchaseInsurance">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Purchase Insurance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Rating -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Rating">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#CreditScore"/>
+        <rdfs:comment>A qualitative or quantitative evaluation assigned to an entity, asset, or exposure reflecting its credit quality, performance, or risk profile.</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Record -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Record">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Document"/>
+        <rdfs:comment>Memorialization and objective evidence of activities performed, events occurred, results achieved, or statements made, regardless of its characteristics, media, physical form, or the manner in which it is recorded or stored.</rdfs:comment>
+        <rdfs:label>Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#RecordCheck -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#RecordCheck">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#CreditCheck"/>
+        <rdfs:comment>An evaluation of an applicant’s past records or history, such as payment performance or legal standing, as part of a credit or mortgage assessment.</rdfs:comment>
+        <rdfs:label>Record Check</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Report -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Report">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Document"/>
+        <rdfs:comment>Document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as required basis.</rdfs:comment>
+        <rdfs:label>Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ReschedulePayment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ReschedulePayment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Reschedule Payment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Risk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Risk">
+        <rdfs:comment>The possibility of an event or condition that, if it occurs, has a negative impact on objectives, outcomes, or value.</rdfs:comment>
+        <rdfs:label>Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#RiskAssessment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#RiskAssessment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#AssessmentEvent"/>
+        <rdfs:comment>An event indicating the evaluation of risk for a whole or part of a product life cycle.</rdfs:comment>
+        <rdfs:label>Risk Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#RiskLevel -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#RiskLevel">
+        <rdfs:comment>A qualitative or quantitative categorization of the magnitude or severity of a risk, typically derived from the combination of likelihood and impact assessments.</rdfs:comment>
+        <rdfs:label>Risk Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#RiskSource -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#RiskSource">
+        <rdfs:comment>Sources of the risks associated with the lifecycle stages.</rdfs:comment>
+        <rdfs:label>Risk Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#RiskTreatment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#RiskTreatment">
+        <rdfs:comment>A process, action, or set of measures intended to modify a risk by reducing, avoiding, transferring, or accepting it.</rdfs:comment>
+        <rdfs:label>Risk Treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Role -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Role">
+        <rdfs:comment>A function, capacity, or position that a party assumes in a given context, defining its responsibilities, rights, or relationships.</rdfs:comment>
+        <rdfs:label>Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ServicingStage -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ServicingStage">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>Servicing Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Stock -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Stock">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#FinancialInstrument"/>
+        <rdfs:comment>A financial instrument that signifies ownership interest in a company or entity, representing a claim on part of its assets and earnings.</rdfs:comment>
+        <rdfs:label>Equity Instrument (Stock)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Transaction -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Transaction">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Occurrence"/>
+        <rdfs:comment>An event that indicates movement of finances in or out of an account.</rdfs:comment>
+        <rdfs:label>Transaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#TransactionRecord -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#TransactionRecord">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Record"/>
+        <rdfs:comment>A record for all previous transactions made by a person.</rdfs:comment>
+        <rdfs:label>Transaction Record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#Transfer -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#Transfer">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Transaction"/>
+        <rdfs:comment>Transfer of funds between accounts.</rdfs:comment>
+        <rdfs:label>Transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#TransferOperation -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#TransferOperation">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#ControlAction"/>
+        <rdfs:label>Transfer To</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#TransferRisk -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#TransferRisk">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#RiskTreatment"/>
+        <rdfs:label>Transfer Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#UnderwritingStage -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#UnderwritingStage">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#LifeCycleStage"/>
+        <rdfs:label>Underwriting Stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#ValueAssessment -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#ValueAssessment">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#AssessmentEvent"/>
+        <rdfs:comment>Assessment event to estimate the value of something.</rdfs:comment>
+        <rdfs:label>Value Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/finrisk#VariableInterest -->
+
+
+    <owl:Class rdf:about="http://example.org/finrisk#VariableInterest">
+        <rdfs:subClassOf rdf:resource="http://example.org/finrisk#Interest"/>
+        <rdfs:label>Variable Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.opengis.net/def/uom/ISO-8601/0/Gregorian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Friday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Friday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Monday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Monday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Saturday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Saturday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Sunday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Sunday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Thursday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Thursday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Tuesday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Tuesday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Wednesday -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Wednesday"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitDay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitDay"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitHour"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitMinute -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitMinute"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitMonth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitSecond -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitSecond"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitWeek -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitWeek"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#unitYear -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#unitYear"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

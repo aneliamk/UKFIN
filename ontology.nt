@@ -1,0 +1,1772 @@
+<http://example.org/finrisk#FinancialRiskOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://example.org/finrisk#FinancialRiskOntology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
+<http://example.org/finrisk#FinancialRiskOntology> <http://purl.org/dc/terms/creator> "Nizar Al-Ahmad et al." .
+<http://example.org/finrisk#FinancialRiskOntology> <http://purl.org/dc/terms/description> "Extends selected FIBO concepts for mortgage and financial risk modelling (ISO 31000–aligned)." .
+<http://example.org/finrisk#FinancialRiskOntology> <http://purl.org/dc/terms/source> "EDMC Financial Industry Business Ontology (FIBO)" .
+<http://example.org/finrisk#FinancialRiskOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology for organisational structure, financial risks, and mortgage product lifecycle." .
+<http://example.org/finrisk#FinancialRiskOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology reuses and extends concepts from the EDMC FIBO ontologies." .
+<http://example.org/finrisk#FinancialRiskOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Risk and Mortgage Ontology" .
+<http://example.org/finrisk#FinancialRiskOntology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://spec.edmcouncil.org/fibo/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/isVersionOf
+<http://purl.org/dc/terms/isVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/XMLSchema#pattern
+<http://www.w3.org/2001/XMLSchema#pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#changeNote
+<http://www.w3.org/2004/02/skos/core#changeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#historyNote
+<http://www.w3.org/2004/02/skos/core#historyNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#duration
+<http://www.w3.org/2001/XMLSchema#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gDay
+<http://www.w3.org/2001/XMLSchema#gDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gMonth
+<http://www.w3.org/2001/XMLSchema#gMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#gYearMonth
+<http://www.w3.org/2001/XMLSchema#gYearMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/finrisk#Controls
+<http://example.org/finrisk#Controls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#Controls> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#controlledBy> .
+<http://example.org/finrisk#Controls> <http://www.w3.org/2000/01/rdf-schema#label> "controls" .
+# 
+# http://example.org/finrisk#RiskAssessedBy
+<http://example.org/finrisk#RiskAssessedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#RiskAssessedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#assessesRisk> .
+<http://example.org/finrisk#RiskAssessedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#RiskAssessedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskAssessment> .
+<http://example.org/finrisk#RiskAssessedBy> <http://www.w3.org/2000/01/rdf-schema#label> "risk assessed by" .
+# 
+# http://example.org/finrisk#aRiskTo
+<http://example.org/finrisk#aRiskTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#aRiskTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#hasRiskSource> .
+<http://example.org/finrisk#aRiskTo> <http://www.w3.org/2000/01/rdf-schema#label> "a risk to" .
+# 
+# http://example.org/finrisk#actionOf
+<http://example.org/finrisk#actionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#actionOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#hasAction> .
+<http://example.org/finrisk#actionOf> <http://www.w3.org/2000/01/rdf-schema#label> "action of" .
+# 
+# http://example.org/finrisk#applicantOf
+<http://example.org/finrisk#applicantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#applicantOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#hasApplicant> .
+<http://example.org/finrisk#applicantOf> <http://www.w3.org/2000/01/rdf-schema#label> "applicant of" .
+# 
+# http://example.org/finrisk#applicationOf
+<http://example.org/finrisk#applicationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#applicationOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#hasApplication> .
+<http://example.org/finrisk#applicationOf> <http://www.w3.org/2000/01/rdf-schema#label> "application of" .
+# 
+# http://example.org/finrisk#assessedBy
+<http://example.org/finrisk#assessedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#assessedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#assesses> .
+<http://example.org/finrisk#assessedBy> <http://www.w3.org/2000/01/rdf-schema#label> "assessed by" .
+# 
+# http://example.org/finrisk#assesses
+<http://example.org/finrisk#assesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#assesses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ValueAssessment> .
+<http://example.org/finrisk#assesses> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#assesses> <http://www.w3.org/2000/01/rdf-schema#label> "assesses" .
+# 
+# http://example.org/finrisk#assessesRisk
+<http://example.org/finrisk#assessesRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#assessesRisk> <http://www.w3.org/2000/01/rdf-schema#label> "assesses risk" .
+# 
+# http://example.org/finrisk#assetRecoveredBy
+<http://example.org/finrisk#assetRecoveredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#assetRecoveredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#recoversAsset> .
+<http://example.org/finrisk#assetRecoveredBy> <http://www.w3.org/2000/01/rdf-schema#label> "asset recovered by" .
+# 
+# http://example.org/finrisk#belongsTo
+<http://example.org/finrisk#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanSchedule> .
+<http://example.org/finrisk#belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to" .
+# 
+# http://example.org/finrisk#causesRiskSource
+<http://example.org/finrisk#causesRiskSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#causesRiskSource> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#riskCausedBy> .
+<http://example.org/finrisk#causesRiskSource> <http://www.w3.org/2000/01/rdf-schema#label> "causes risk source" .
+# 
+# http://example.org/finrisk#changedBy
+<http://example.org/finrisk#changedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#changedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#changes> .
+<http://example.org/finrisk#changedBy> <http://www.w3.org/2000/01/rdf-schema#label> "changed by" .
+# 
+# http://example.org/finrisk#changes
+<http://example.org/finrisk#changes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#changes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#DocumentCheck> .
+<http://example.org/finrisk#changes> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskLevel> .
+<http://example.org/finrisk#changes> <http://www.w3.org/2000/01/rdf-schema#label> "changes" .
+# 
+# http://example.org/finrisk#closedBy
+<http://example.org/finrisk#closedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#closedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#closes> .
+<http://example.org/finrisk#closedBy> <http://www.w3.org/2000/01/rdf-schema#label> "closed by" .
+# 
+# http://example.org/finrisk#closes
+<http://example.org/finrisk#closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#closes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ForeclosureEvent> .
+<http://example.org/finrisk#closes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes" .
+# 
+# http://example.org/finrisk#collateralOf
+<http://example.org/finrisk#collateralOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#collateralOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#holdsCollateral> .
+<http://example.org/finrisk#collateralOf> <http://www.w3.org/2000/01/rdf-schema#label> "collateral of" .
+# 
+# http://example.org/finrisk#concernedBy
+<http://example.org/finrisk#concernedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#concernedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#concerns> .
+<http://example.org/finrisk#concernedBy> <http://www.w3.org/2000/01/rdf-schema#label> "concerned by" .
+# 
+# http://example.org/finrisk#concerns
+<http://example.org/finrisk#concerns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#concerns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#concerns> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#concerns> <http://www.w3.org/2000/01/rdf-schema#label> "concerns" .
+# 
+# http://example.org/finrisk#controlledBy
+<http://example.org/finrisk#controlledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#controlledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#controlledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#controlledBy> <http://www.w3.org/2000/01/rdf-schema#label> "controlled by" .
+# 
+# http://example.org/finrisk#coveredBy
+<http://example.org/finrisk#coveredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#coveredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#covers> .
+<http://example.org/finrisk#coveredBy> <http://www.w3.org/2000/01/rdf-schema#label> "covered by" .
+# 
+# http://example.org/finrisk#covers
+<http://example.org/finrisk#covers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#covers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#PurchaseInsurance> .
+<http://example.org/finrisk#covers> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#MortgageRisk> .
+<http://example.org/finrisk#covers> <http://www.w3.org/2000/01/rdf-schema#label> "covers" .
+# 
+# http://example.org/finrisk#decreasedBy
+<http://example.org/finrisk#decreasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#decreasedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#decreases> .
+<http://example.org/finrisk#decreasedBy> <http://www.w3.org/2000/01/rdf-schema#label> "decreased by" .
+# 
+# http://example.org/finrisk#decreases
+<http://example.org/finrisk#decreases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#decreases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#decreases> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#CreditBalance> .
+<http://example.org/finrisk#decreases> <http://www.w3.org/2000/01/rdf-schema#label> "decreases" .
+# 
+# http://example.org/finrisk#definedBy
+<http://example.org/finrisk#definedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#definedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#definesPayment> .
+<http://example.org/finrisk#definedBy> <http://www.w3.org/2000/01/rdf-schema#label> "defined by" .
+# 
+# http://example.org/finrisk#definesPayment
+<http://example.org/finrisk#definesPayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#definesPayment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanSchedule> .
+<http://example.org/finrisk#definesPayment> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#definesPayment> <http://www.w3.org/2000/01/rdf-schema#label> "defines payment" .
+# 
+# http://example.org/finrisk#guarantees
+<http://example.org/finrisk#guarantees> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#guarantees> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#hasGuarantor> .
+<http://example.org/finrisk#guarantees> <http://www.w3.org/2000/01/rdf-schema#label> "guarantees" .
+# 
+# http://example.org/finrisk#hasAccountHolder
+<http://example.org/finrisk#hasAccountHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasAccountHolder> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#holdsAccount> .
+<http://example.org/finrisk#hasAccountHolder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#hasAccountHolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Person> .
+<http://example.org/finrisk#hasAccountHolder> <http://www.w3.org/2000/01/rdf-schema#label> "has account holder" .
+# 
+# http://example.org/finrisk#hasAction
+<http://example.org/finrisk#hasAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#hasAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#hasAction> <http://www.w3.org/2000/01/rdf-schema#label> "has action" .
+# 
+# http://example.org/finrisk#hasAmortisationType
+<http://example.org/finrisk#hasAmortisationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasAmortisationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#hasAmortisationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Amortisation> .
+<http://example.org/finrisk#hasAmortisationType> <http://www.w3.org/2000/01/rdf-schema#label> "has amortisation type" .
+# 
+# http://example.org/finrisk#hasApplicant
+<http://example.org/finrisk#hasApplicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasApplicant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#hasApplicant> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Person> .
+<http://example.org/finrisk#hasApplicant> <http://www.w3.org/2000/01/rdf-schema#label> "has applicant" .
+# 
+# http://example.org/finrisk#hasApplication
+<http://example.org/finrisk#hasApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasApplication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Mortgage> .
+<http://example.org/finrisk#hasApplication> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#hasApplication> <http://www.w3.org/2000/01/rdf-schema#label> "has application" .
+# 
+# http://example.org/finrisk#hasArrears
+<http://example.org/finrisk#hasArrears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasArrears> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#hasArrears> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Arrears> .
+<http://example.org/finrisk#hasArrears> <http://www.w3.org/2000/01/rdf-schema#label> "has arrears" .
+# 
+# http://example.org/finrisk#hasBalance
+<http://example.org/finrisk#hasBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasBalance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#hasBalance> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#CreditBalance> .
+<http://example.org/finrisk#hasBalance> <http://www.w3.org/2000/01/rdf-schema#label> "has balance" .
+# 
+# http://example.org/finrisk#hasExpenses
+<http://example.org/finrisk#hasExpenses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasExpenses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Borrower> .
+<http://example.org/finrisk#hasExpenses> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Expenses> .
+<http://example.org/finrisk#hasExpenses> <http://www.w3.org/2000/01/rdf-schema#label> "has expenses" .
+# 
+# http://example.org/finrisk#hasGuarantor
+<http://example.org/finrisk#hasGuarantor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasGuarantor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#hasGuarantor> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Person> .
+<http://example.org/finrisk#hasGuarantor> <http://www.w3.org/2000/01/rdf-schema#label> "has guarantor" .
+# 
+# http://example.org/finrisk#hasID
+<http://example.org/finrisk#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasID> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#idOf> .
+<http://example.org/finrisk#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Person> .
+<http://example.org/finrisk#hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#IdentityDocument> .
+<http://example.org/finrisk#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "has ID" .
+# 
+# http://example.org/finrisk#hasIncome
+<http://example.org/finrisk#hasIncome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasIncome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Borrower> .
+<http://example.org/finrisk#hasIncome> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Income> .
+<http://example.org/finrisk#hasIncome> <http://www.w3.org/2000/01/rdf-schema#label> "has income" .
+# 
+# http://example.org/finrisk#hasLiability
+<http://example.org/finrisk#hasLiability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasLiability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Borrower> .
+<http://example.org/finrisk#hasLiability> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Liability> .
+<http://example.org/finrisk#hasLiability> <http://www.w3.org/2000/01/rdf-schema#label> "has liability" .
+# 
+# http://example.org/finrisk#hasLocation
+<http://example.org/finrisk#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasLocation> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#locatedAt> .
+<http://example.org/finrisk#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
+# 
+# http://example.org/finrisk#hasNextStage
+<http://example.org/finrisk#hasNextStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasNextStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#hasNextStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#hasNextStage> <http://www.w3.org/2000/01/rdf-schema#label> "has next stage" .
+# 
+# http://example.org/finrisk#hasPreviousStage
+<http://example.org/finrisk#hasPreviousStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasPreviousStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#hasPreviousStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#hasPreviousStage> <http://www.w3.org/2000/01/rdf-schema#label> "has previous stage" .
+# 
+# http://example.org/finrisk#hasRisk
+<http://example.org/finrisk#hasRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasRisk> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#isRiskOf> .
+<http://example.org/finrisk#hasRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#hasRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#hasRisk> <http://www.w3.org/2000/01/rdf-schema#label> "has risk" .
+# 
+# http://example.org/finrisk#hasRiskLevel
+<http://example.org/finrisk#hasRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasRiskLevel> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#levelOfRisk> .
+<http://example.org/finrisk#hasRiskLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#hasRiskLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskLevel> .
+<http://example.org/finrisk#hasRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has risk level" .
+# 
+# http://example.org/finrisk#hasRiskSource
+<http://example.org/finrisk#hasRiskSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasRiskSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#hasRiskSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#hasRiskSource> <http://www.w3.org/2000/01/rdf-schema#label> "has risk source" .
+# 
+# http://example.org/finrisk#hasRole
+<http://example.org/finrisk#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#roleOf> .
+<http://example.org/finrisk#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Person> .
+<http://example.org/finrisk#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Role> .
+<http://example.org/finrisk#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role" .
+# 
+# http://example.org/finrisk#hasStage
+<http://example.org/finrisk#hasStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#FinancialProduct> .
+<http://example.org/finrisk#hasStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#hasStage> <http://www.w3.org/2000/01/rdf-schema#label> "has stage" .
+# 
+# http://example.org/finrisk#hasTreatment
+<http://example.org/finrisk#hasTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#hasTreatment> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#treatedBy> .
+<http://example.org/finrisk#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "has treatment" .
+# 
+# http://example.org/finrisk#holdsAccount
+<http://example.org/finrisk#holdsAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#holdsAccount> <http://www.w3.org/2000/01/rdf-schema#label> "holds account" .
+# 
+# http://example.org/finrisk#holdsCollateral
+<http://example.org/finrisk#holdsCollateral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#holdsCollateral> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#holdsCollateral> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#holdsCollateral> <http://www.w3.org/2000/01/rdf-schema#label> "holds collateral" .
+# 
+# http://example.org/finrisk#idOf
+<http://example.org/finrisk#idOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#idOf> <http://www.w3.org/2000/01/rdf-schema#label> "ID of" .
+# 
+# http://example.org/finrisk#implementedBy
+<http://example.org/finrisk#implementedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#implementedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#implements> .
+<http://example.org/finrisk#implementedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#implementedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#implementedBy> <http://www.w3.org/2000/01/rdf-schema#label> "implemented by" .
+# 
+# http://example.org/finrisk#implements
+<http://example.org/finrisk#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements" .
+# 
+# http://example.org/finrisk#inStage
+<http://example.org/finrisk#inStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#inStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#inStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#inStage> <http://www.w3.org/2000/01/rdf-schema#label> "in stage" .
+# 
+# http://example.org/finrisk#increasedBy
+<http://example.org/finrisk#increasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#increasedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#increases> .
+<http://example.org/finrisk#increasedBy> <http://www.w3.org/2000/01/rdf-schema#label> "increased by" .
+# 
+# http://example.org/finrisk#increases
+<http://example.org/finrisk#increases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#increases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#increases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#increases> <http://www.w3.org/2000/01/rdf-schema#label> "increases" .
+# 
+# http://example.org/finrisk#involves
+<http://example.org/finrisk#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#involves> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#stepOf> .
+<http://example.org/finrisk#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#involves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#involves> <http://www.w3.org/2000/01/rdf-schema#label> "involves" .
+# 
+# http://example.org/finrisk#isRiskOf
+<http://example.org/finrisk#isRiskOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#isRiskOf> <http://www.w3.org/2000/01/rdf-schema#label> "is risk of" .
+# 
+# http://example.org/finrisk#issuedBy
+<http://example.org/finrisk#issuedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#issuedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#issues> .
+<http://example.org/finrisk#issuedBy> <http://www.w3.org/2000/01/rdf-schema#label> "issued by" .
+# 
+# http://example.org/finrisk#issuedByInsurer
+<http://example.org/finrisk#issuedByInsurer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#issuedByInsurer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#PurchaseInsurance> .
+<http://example.org/finrisk#issuedByInsurer> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#InsuranceCompany> .
+<http://example.org/finrisk#issuedByInsurer> <http://www.w3.org/2000/01/rdf-schema#label> "issued by (insurance)" .
+# 
+# http://example.org/finrisk#issuedByOrg
+<http://example.org/finrisk#issuedByOrg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#issuedByOrg> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#orgIssues> .
+<http://example.org/finrisk#issuedByOrg> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ContractDocument> .
+<http://example.org/finrisk#issuedByOrg> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#issuedByOrg> <http://www.w3.org/2000/01/rdf-schema#label> "issued by organisation" .
+# 
+# http://example.org/finrisk#issues
+<http://example.org/finrisk#issues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#issues> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ValueAssessment> .
+<http://example.org/finrisk#issues> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#AssessmentReport> .
+<http://example.org/finrisk#issues> <http://www.w3.org/2000/01/rdf-schema#label> "issues" .
+# 
+# http://example.org/finrisk#levelOfRisk
+<http://example.org/finrisk#levelOfRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#levelOfRisk> <http://www.w3.org/2000/01/rdf-schema#label> "level of risk" .
+# 
+# http://example.org/finrisk#locatedAt
+<http://example.org/finrisk#locatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#locatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#locatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Address> .
+<http://example.org/finrisk#locatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "located at" .
+# 
+# http://example.org/finrisk#offersProduct
+<http://example.org/finrisk#offersProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#offersProduct> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#productOfferedBy> .
+<http://example.org/finrisk#offersProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#offersProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#FinancialProduct> .
+<http://example.org/finrisk#offersProduct> <http://www.w3.org/2000/01/rdf-schema#label> "offers product" .
+# 
+# http://example.org/finrisk#openedBy
+<http://example.org/finrisk#openedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#openedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#opens> .
+<http://example.org/finrisk#openedBy> <http://www.w3.org/2000/01/rdf-schema#label> "opened by" .
+# 
+# http://example.org/finrisk#opens
+<http://example.org/finrisk#opens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#opens> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#opens> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#opens> <http://www.w3.org/2000/01/rdf-schema#label> "opens" .
+# 
+# http://example.org/finrisk#orgIssues
+<http://example.org/finrisk#orgIssues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#orgIssues> <http://www.w3.org/2000/01/rdf-schema#label> "organisation issues" .
+# 
+# http://example.org/finrisk#ownedBy
+<http://example.org/finrisk#ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#ownedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#owns> .
+<http://example.org/finrisk#ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "owned by" .
+# 
+# http://example.org/finrisk#owns
+<http://example.org/finrisk#owns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#owns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Person> .
+<http://example.org/finrisk#owns> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#owns> <http://www.w3.org/2000/01/rdf-schema#label> "owns" .
+# 
+# http://example.org/finrisk#paidBy
+<http://example.org/finrisk#paidBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#paidBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#pays> .
+<http://example.org/finrisk#paidBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#paidBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#paidBy> <http://www.w3.org/2000/01/rdf-schema#label> "paid by" .
+# 
+# http://example.org/finrisk#pays
+<http://example.org/finrisk#pays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#pays> <http://www.w3.org/2000/01/rdf-schema#label> "pays" .
+# 
+# http://example.org/finrisk#productOfferedBy
+<http://example.org/finrisk#productOfferedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#productOfferedBy> <http://www.w3.org/2000/01/rdf-schema#label> "product offered by" .
+# 
+# http://example.org/finrisk#providedBy
+<http://example.org/finrisk#providedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#providedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#provides> .
+<http://example.org/finrisk#providedBy> <http://www.w3.org/2000/01/rdf-schema#label> "provided by" .
+# 
+# http://example.org/finrisk#provides
+<http://example.org/finrisk#provides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#provides> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#PropertyInspection> .
+<http://example.org/finrisk#provides> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#ValueAssessment> .
+<http://example.org/finrisk#provides> <http://www.w3.org/2000/01/rdf-schema#label> "provides" .
+# 
+# http://example.org/finrisk#receivesTransfer
+<http://example.org/finrisk#receivesTransfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#receivesTransfer> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#transfersTo> .
+<http://example.org/finrisk#receivesTransfer> <http://www.w3.org/2000/01/rdf-schema#label> "receives transfer" .
+# 
+# http://example.org/finrisk#recommendsTreatment
+<http://example.org/finrisk#recommendsTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#recommendsTreatment> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#treatmentRecommendedBy> .
+<http://example.org/finrisk#recommendsTreatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#RiskAssessment> .
+<http://example.org/finrisk#recommendsTreatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#recommendsTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "recommends treatment" .
+# 
+# http://example.org/finrisk#recoversAsset
+<http://example.org/finrisk#recoversAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#recoversAsset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ForeclosureEvent> .
+<http://example.org/finrisk#recoversAsset> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#recoversAsset> <http://www.w3.org/2000/01/rdf-schema#label> "recovers asset" .
+# 
+# http://example.org/finrisk#requiredFor
+<http://example.org/finrisk#requiredFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#requiredFor> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#requires> .
+<http://example.org/finrisk#requiredFor> <http://www.w3.org/2000/01/rdf-schema#label> "required for" .
+# 
+# http://example.org/finrisk#requires
+<http://example.org/finrisk#requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#requires> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#requires> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#requires> <http://www.w3.org/2000/01/rdf-schema#label> "requires" .
+# 
+# http://example.org/finrisk#riskCausedBy
+<http://example.org/finrisk#riskCausedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#riskCausedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#riskCausedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#riskCausedBy> <http://www.w3.org/2000/01/rdf-schema#label> "risk caused by" .
+# 
+# http://example.org/finrisk#roleOf
+<http://example.org/finrisk#roleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#roleOf> <http://www.w3.org/2000/01/rdf-schema#label> "role of" .
+# 
+# http://example.org/finrisk#signedBy
+<http://example.org/finrisk#signedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#signedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#signs> .
+<http://example.org/finrisk#signedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ContractDocument> .
+<http://example.org/finrisk#signedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#signedBy> <http://www.w3.org/2000/01/rdf-schema#label> "signed by" .
+# 
+# http://example.org/finrisk#signs
+<http://example.org/finrisk#signs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#signs> <http://www.w3.org/2000/01/rdf-schema#label> "signs" .
+# 
+# http://example.org/finrisk#startsContract
+<http://example.org/finrisk#startsContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#startsContract> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#startsContract> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#startsContract> <http://www.w3.org/2000/01/rdf-schema#label> "starts contract" .
+# 
+# http://example.org/finrisk#stepOf
+<http://example.org/finrisk#stepOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#stepOf> <http://www.w3.org/2000/01/rdf-schema#label> "step of" .
+# 
+# http://example.org/finrisk#transfersTo
+<http://example.org/finrisk#transfersTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#transfersTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#transfersTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#transfersTo> <http://www.w3.org/2000/01/rdf-schema#label> "transfers to" .
+# 
+# http://example.org/finrisk#treatedBy
+<http://example.org/finrisk#treatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#treatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "treated by" .
+# 
+# http://example.org/finrisk#treatmentRecommendedBy
+<http://example.org/finrisk#treatmentRecommendedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#treatmentRecommendedBy> <http://www.w3.org/2000/01/rdf-schema#label> "treatment recommended by" .
+# 
+# http://example.org/finrisk#triggeredBy
+<http://example.org/finrisk#triggeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#triggeredBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://example.org/finrisk#triggers> .
+<http://example.org/finrisk#triggeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "triggered by" .
+# 
+# http://example.org/finrisk#triggers
+<http://example.org/finrisk#triggers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/finrisk#triggers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#triggers> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/finrisk#triggers> <http://www.w3.org/2000/01/rdf-schema#label> "triggers" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://example.org/finrisk#accountStatus
+<http://example.org/finrisk#accountStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#accountStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#accountStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#actualPrincipal
+<http://example.org/finrisk#actualPrincipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#actualPrincipal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#actualPrincipal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#applicationID
+<http://example.org/finrisk#applicationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#applicationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#applicationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#applicationStatus
+<http://example.org/finrisk#applicationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#arrearsLimitCount
+<http://example.org/finrisk#arrearsLimitCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#arrearsLimitCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#arrearsLimitCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://example.org/finrisk#assessedValueAmount
+<http://example.org/finrisk#assessedValueAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#assessedValueAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ValueAssessment> .
+<http://example.org/finrisk#assessedValueAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#balanceAmount
+<http://example.org/finrisk#balanceAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#balanceAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#balanceAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#birthDate
+<http://example.org/finrisk#birthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#birthDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#BirthCertificate> .
+<http://example.org/finrisk#birthDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#branchID
+<http://example.org/finrisk#branchID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#branchID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Bank> .
+<http://example.org/finrisk#branchID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#city
+<http://example.org/finrisk#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#city> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Address> .
+<http://example.org/finrisk#city> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#combinedLoanToValueRatio
+<http://example.org/finrisk#combinedLoanToValueRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#combinedLoanToValueRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#combinedLoanToValueRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#contractStatus
+<http://example.org/finrisk#contractStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#contractStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#contractStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#country
+<http://example.org/finrisk#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Address> .
+<http://example.org/finrisk#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#coverageAmount
+<http://example.org/finrisk#coverageAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#coverageAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#PurchaseInsurance> .
+<http://example.org/finrisk#coverageAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#creditCheckStatus
+<http://example.org/finrisk#creditCheckStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#creditCheckStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#CreditCheck> .
+<http://example.org/finrisk#creditCheckStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#currentInterest
+<http://example.org/finrisk#currentInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#currentInterest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#currentInterest> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#debtToIncomeRatio
+<http://example.org/finrisk#debtToIncomeRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#debtToIncomeRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#debtToIncomeRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#documentCheckStatus
+<http://example.org/finrisk#documentCheckStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#documentCheckStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#DocumentCheck> .
+<http://example.org/finrisk#documentCheckStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#downPayment
+<http://example.org/finrisk#downPayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#downPayment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#downPayment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#dueDate
+<http://example.org/finrisk#dueDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#dueDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#dueDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#expenseAmount
+<http://example.org/finrisk#expenseAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#expenseAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Expenses> .
+<http://example.org/finrisk#expenseAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#expiryDate
+<http://example.org/finrisk#expiryDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#expiryDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LegalDocument> .
+<http://example.org/finrisk#expiryDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#firstName
+<http://example.org/finrisk#firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#IdentityDocument> .
+<http://example.org/finrisk#firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#firstPaymentDate
+<http://example.org/finrisk#firstPaymentDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#firstPaymentDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#firstPaymentDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#idNumber
+<http://example.org/finrisk#idNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#idNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#idNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#impact
+<http://example.org/finrisk#impact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#impact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#impact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#incomeAmount
+<http://example.org/finrisk#incomeAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#incomeAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Income> .
+<http://example.org/finrisk#incomeAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#interestRate
+<http://example.org/finrisk#interestRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#interestRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Interest> .
+<http://example.org/finrisk#interestRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#interestStatus
+<http://example.org/finrisk#interestStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#interestStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Interest> .
+<http://example.org/finrisk#interestStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#issueDate
+<http://example.org/finrisk#issueDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#issueDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LegalDocument> .
+<http://example.org/finrisk#issueDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#lastName
+<http://example.org/finrisk#lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#IdentityDocument> .
+<http://example.org/finrisk#lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#liabilityAmount
+<http://example.org/finrisk#liabilityAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#liabilityAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Liability> .
+<http://example.org/finrisk#liabilityAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#likelihood
+<http://example.org/finrisk#likelihood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#likelihood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#likelihood> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#limitCount
+<http://example.org/finrisk#limitCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#limitCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Arrears> .
+<http://example.org/finrisk#limitCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://example.org/finrisk#loanAgeMonth
+<http://example.org/finrisk#loanAgeMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#loanAgeMonth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#loanAgeMonth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://example.org/finrisk#loanBalanceAmount
+<http://example.org/finrisk#loanBalanceAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#loanBalanceAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#loanBalanceAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#loanID
+<http://example.org/finrisk#loanID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#loanID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#loanID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#loanPurpose
+<http://example.org/finrisk#loanPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#loanPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#loanPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#loanTermMonths
+<http://example.org/finrisk#loanTermMonths> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#loanTermMonths> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#loanTermMonths> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://example.org/finrisk#loanToValueRatio
+<http://example.org/finrisk#loanToValueRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#loanToValueRatio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#loanToValueRatio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#marketValue
+<http://example.org/finrisk#marketValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#marketValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#marketValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#maturityDate
+<http://example.org/finrisk#maturityDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#maturityDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#maturityDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#missedCount
+<http://example.org/finrisk#missedCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#missedCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Arrears> .
+<http://example.org/finrisk#missedCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://example.org/finrisk#mortgageInterestRate
+<http://example.org/finrisk#mortgageInterestRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#mortgageInterestRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#mortgageInterestRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#orgName
+<http://example.org/finrisk#orgName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#orgName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#orgName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#orgType
+<http://example.org/finrisk#orgType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#orgType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#orgType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#passportNumber
+<http://example.org/finrisk#passportNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#passportNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Passport> .
+<http://example.org/finrisk#passportNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#paymentDate
+<http://example.org/finrisk#paymentDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#paymentDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#paymentDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#paymentHistoryCode
+<http://example.org/finrisk#paymentHistoryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#paymentHistoryCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#paymentHistoryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#paymentID
+<http://example.org/finrisk#paymentID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#paymentID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#paymentID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#postalCode
+<http://example.org/finrisk#postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Address> .
+<http://example.org/finrisk#postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#prepayPenalty
+<http://example.org/finrisk#prepayPenalty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#prepayPenalty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#prepayPenalty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://example.org/finrisk#principalAmount
+<http://example.org/finrisk#principalAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#principalAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageContract> .
+<http://example.org/finrisk#principalAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#recordCheckStatus
+<http://example.org/finrisk#recordCheckStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#recordCheckStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#RecordCheck> .
+<http://example.org/finrisk#recordCheckStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#remainingCredit
+<http://example.org/finrisk#remainingCredit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#remainingCredit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanSchedule> .
+<http://example.org/finrisk#remainingCredit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#remainingTerm
+<http://example.org/finrisk#remainingTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#remainingTerm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#LoanAccount> .
+<http://example.org/finrisk#remainingTerm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://example.org/finrisk#requestedAmount
+<http://example.org/finrisk#requestedAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#requestedAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#MortgageApplication> .
+<http://example.org/finrisk#requestedAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#requiredAmount
+<http://example.org/finrisk#requiredAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#requiredAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#ForeclosureEvent> .
+<http://example.org/finrisk#requiredAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#riskScore
+<http://example.org/finrisk#riskScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#riskScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#riskScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#scheduledPrincipal
+<http://example.org/finrisk#scheduledPrincipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#scheduledPrincipal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#scheduledPrincipal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#street
+<http://example.org/finrisk#street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#street> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Address> .
+<http://example.org/finrisk#street> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://example.org/finrisk#totalPrincipal
+<http://example.org/finrisk#totalPrincipal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#totalPrincipal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#totalPrincipal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#transactionAmount
+<http://example.org/finrisk#transactionAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#transactionAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Transaction> .
+<http://example.org/finrisk#transactionAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org/finrisk#transactionDate
+<http://example.org/finrisk#transactionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#transactionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Transaction> .
+<http://example.org/finrisk#transactionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://example.org/finrisk#valuationDate
+<http://example.org/finrisk#valuationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://example.org/finrisk#valuationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#valuationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://example.org/finrisk#AcceptRisk
+<http://example.org/finrisk#AcceptRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AcceptRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#AcceptRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Accept Risk" .
+# 
+# http://example.org/finrisk#Account
+<http://example.org/finrisk#Account> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Account> <http://www.w3.org/2000/01/rdf-schema#comment> "Container for records associated with a business arrangement for regular transactions and services. In general, account will have a subclass that represents the account type and will be related to a person who is the account holder; it will have an account number, balance and interest rate associated with it." .
+<http://example.org/finrisk#Account> <http://www.w3.org/2000/01/rdf-schema#label> "Account" .
+# 
+# http://example.org/finrisk#AccountStatement
+<http://example.org/finrisk#AccountStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AccountStatement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Record> .
+<http://example.org/finrisk#AccountStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "Periodic summary of account activity for a given period of time." .
+<http://example.org/finrisk#AccountStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Account Statement" .
+# 
+# http://example.org/finrisk#Address
+<http://example.org/finrisk#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Location> .
+<http://example.org/finrisk#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured set of information that describes the location of a place or property, typically including street, city, postal code, and country." .
+<http://example.org/finrisk#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address" .
+# 
+# http://example.org/finrisk#AdjustInterestRate
+<http://example.org/finrisk#AdjustInterestRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AdjustInterestRate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#AdjustInterestRate> <http://www.w3.org/2000/01/rdf-schema#label> "Adjust Interest Rate" .
+# 
+# http://example.org/finrisk#AgreementDocument
+<http://example.org/finrisk#AgreementDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AgreementDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LegalDocument> .
+<http://example.org/finrisk#AgreementDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal document used to verify an agreement between two or more parties." .
+<http://example.org/finrisk#AgreementDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Agreement Document" .
+# 
+# http://example.org/finrisk#Amortisation
+<http://example.org/finrisk#Amortisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Amortisation> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured process of repaying a loan or debt over time through scheduled periodic payments that cover interest and typically portions of the principal amount." .
+<http://example.org/finrisk#Amortisation> <http://www.w3.org/2000/01/rdf-schema#label> "Amortisation" .
+# 
+# http://example.org/finrisk#ApplicationRejection
+<http://example.org/finrisk#ApplicationRejection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ApplicationRejection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#ApplicationRejection> <http://www.w3.org/2000/01/rdf-schema#label> "Application Rejection" .
+# 
+# http://example.org/finrisk#ApplicationStage
+<http://example.org/finrisk#ApplicationStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ApplicationStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#ApplicationStage> <http://www.w3.org/2000/01/rdf-schema#label> "Application Stage" .
+# 
+# http://example.org/finrisk#Arrears
+<http://example.org/finrisk#Arrears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Arrears> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of being behind in fulfilling financial obligations, such as missed or overdue loan or mortgage payments." .
+<http://example.org/finrisk#Arrears> <http://www.w3.org/2000/01/rdf-schema#label> "Arrears" .
+# 
+# http://example.org/finrisk#ArrearsLimitExceeded
+<http://example.org/finrisk#ArrearsLimitExceeded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ArrearsLimitExceeded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#ArrearsLimitExceeded> <http://www.w3.org/2000/01/rdf-schema#label> "Arrears Limit Exceeded" .
+# 
+# http://example.org/finrisk#ArrearsRisk
+<http://example.org/finrisk#ArrearsRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ArrearsRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#ArrearsRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk that accumulated unpaid obligations or overdue payments lead to loan delinquency, legal action, or foreclosure." .
+<http://example.org/finrisk#ArrearsRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Arrears Risk" .
+# 
+# http://example.org/finrisk#AssessmentEvent
+<http://example.org/finrisk#AssessmentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AssessmentEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Occurrence> .
+<http://example.org/finrisk#AssessmentEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Event involving the evaluation or estimation of the nature, quality, or ability of someone or something." .
+<http://example.org/finrisk#AssessmentEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Assessment Event" .
+# 
+# http://example.org/finrisk#AssessmentReport
+<http://example.org/finrisk#AssessmentReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AssessmentReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Report> .
+<http://example.org/finrisk#AssessmentReport> <http://www.w3.org/2000/01/rdf-schema#comment> "A report indicating the details of an assessed asset and its estimated value and condition." .
+<http://example.org/finrisk#AssessmentReport> <http://www.w3.org/2000/01/rdf-schema#label> "Assessment Report" .
+# 
+# http://example.org/finrisk#Asset
+<http://example.org/finrisk#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Asset> <http://www.w3.org/2000/01/rdf-schema#comment> "Something of economic value owned or controlled by an entity that is expected to provide future benefit." .
+<http://example.org/finrisk#Asset> <http://www.w3.org/2000/01/rdf-schema#label> "Asset" .
+# 
+# http://example.org/finrisk#AssetRisk
+<http://example.org/finrisk#AssetRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AssetRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#AssetRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk of financial loss arising from the reduction in value, impairment, or loss of an asset used as collateral for a mortgage or loan." .
+<http://example.org/finrisk#AssetRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Asset Risk" .
+# 
+# http://example.org/finrisk#AvoidRisk
+<http://example.org/finrisk#AvoidRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#AvoidRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#AvoidRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Avoid Risk" .
+# 
+# http://example.org/finrisk#BadRecord
+<http://example.org/finrisk#BadRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#BadRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#BadRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Bad Record" .
+# 
+# http://example.org/finrisk#Balance
+<http://example.org/finrisk#Balance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Balance> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantified statement of the amount of money held in an account at a given point in time, representing either a credit or debit position." .
+<http://example.org/finrisk#Balance> <http://www.w3.org/2000/01/rdf-schema#label> "Balance" .
+# 
+# http://example.org/finrisk#BalloonAmortisation
+<http://example.org/finrisk#BalloonAmortisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#BalloonAmortisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Amortisation> .
+<http://example.org/finrisk#BalloonAmortisation> <http://www.w3.org/2000/01/rdf-schema#label> "Balloon Amortisation" .
+# 
+# http://example.org/finrisk#Bank
+<http://example.org/finrisk#Bank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Bank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#Bank> <http://www.w3.org/2000/01/rdf-schema#comment> "The commercial name of the organisational body of the institute." .
+<http://example.org/finrisk#Bank> <http://www.w3.org/2000/01/rdf-schema#label> "Bank" .
+# 
+# http://example.org/finrisk#BirthCertificate
+<http://example.org/finrisk#BirthCertificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#BirthCertificate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Certificate> .
+<http://example.org/finrisk#BirthCertificate> <http://www.w3.org/2000/01/rdf-schema#comment> "Original document certifying the circumstances of the birth, or a certified copy or representation of the ensuing registration of that birth." .
+<http://example.org/finrisk#BirthCertificate> <http://www.w3.org/2000/01/rdf-schema#label> "Birth Certificate" .
+# 
+# http://example.org/finrisk#Bond
+<http://example.org/finrisk#Bond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Bond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#FinancialInstrument> .
+<http://example.org/finrisk#Bond> <http://www.w3.org/2000/01/rdf-schema#comment> "A debt security under which the issuer owes the holders a debt and is obliged to pay interest and repay the principal at a later date, known as maturity." .
+<http://example.org/finrisk#Bond> <http://www.w3.org/2000/01/rdf-schema#label> "Bond" .
+# 
+# http://example.org/finrisk#Borrower
+<http://example.org/finrisk#Borrower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Borrower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Role> .
+<http://example.org/finrisk#Borrower> <http://www.w3.org/2000/01/rdf-schema#comment> "A party that receives money or other assets under a loan agreement and is obligated to repay them under specified terms." .
+<http://example.org/finrisk#Borrower> <http://www.w3.org/2000/01/rdf-schema#label> "Borrower" .
+# 
+# http://example.org/finrisk#BusinessUnit
+<http://example.org/finrisk#BusinessUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#BusinessUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#BusinessUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A part of an organisational structure where financial operations are made." .
+<http://example.org/finrisk#BusinessUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Business Unit" .
+# 
+# http://example.org/finrisk#Calculation
+<http://example.org/finrisk#Calculation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Calculation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Occurrence> .
+<http://example.org/finrisk#Calculation> <http://www.w3.org/2000/01/rdf-schema#comment> "Actual execution of some computation or operation that was scheduled or triggered by something." .
+<http://example.org/finrisk#Calculation> <http://www.w3.org/2000/01/rdf-schema#label> "Calculation" .
+# 
+# http://example.org/finrisk#Certificate
+<http://example.org/finrisk#Certificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Certificate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Document> .
+<http://example.org/finrisk#Certificate> <http://www.w3.org/2000/01/rdf-schema#comment> "Document attesting to the truth of some fact or set of facts." .
+<http://example.org/finrisk#Certificate> <http://www.w3.org/2000/01/rdf-schema#label> "Certificate" .
+# 
+# http://example.org/finrisk#ContractDocument
+<http://example.org/finrisk#ContractDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ContractDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LegalDocument> .
+<http://example.org/finrisk#ContractDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal document that records the formal terms and conditions of some contract." .
+<http://example.org/finrisk#ContractDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Contract Document" .
+# 
+# http://example.org/finrisk#ContractTermination
+<http://example.org/finrisk#ContractTermination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ContractTermination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#ContractTermination> <http://www.w3.org/2000/01/rdf-schema#label> "Contract Termination" .
+# 
+# http://example.org/finrisk#ControlAction
+<http://example.org/finrisk#ControlAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ControlAction> <http://www.w3.org/2000/01/rdf-schema#comment> "An intentional act or measure taken to influence, adjust, or manage a financial process, risk, or contractual condition." .
+<http://example.org/finrisk#ControlAction> <http://www.w3.org/2000/01/rdf-schema#label> "Control Action" .
+# 
+# http://example.org/finrisk#CreditBalance
+<http://example.org/finrisk#CreditBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#CreditBalance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Balance> .
+<http://example.org/finrisk#CreditBalance> <http://www.w3.org/2000/01/rdf-schema#label> "Credit Balance" .
+# 
+# http://example.org/finrisk#CreditCardAccount
+<http://example.org/finrisk#CreditCardAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#CreditCardAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LoanOrCreditAccount> .
+<http://example.org/finrisk#CreditCardAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "An account maintained by a financial institution that records transactions and credit extended to a cardholder under a revolving line of credit, including purchases, repayments, interest, and fees." .
+<http://example.org/finrisk#CreditCardAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Credit Card Account" .
+# 
+# http://example.org/finrisk#CreditCheck
+<http://example.org/finrisk#CreditCheck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#CreditCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "An evaluation of a borrower’s credit history and financial reliability conducted to assess their ability to repay a loan or mortgage." .
+<http://example.org/finrisk#CreditCheck> <http://www.w3.org/2000/01/rdf-schema#label> "Credit Check" .
+# 
+# http://example.org/finrisk#CreditCheckRisk
+<http://example.org/finrisk#CreditCheckRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#CreditCheckRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#CreditCheckRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk associated with incorrect or incomplete assessment of a borrower's creditworthiness, leading to potential default or mispricing of credit." .
+<http://example.org/finrisk#CreditCheckRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Credit Check Risk" .
+# 
+# http://example.org/finrisk#CreditScore
+<http://example.org/finrisk#CreditScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#CreditScore> <http://www.w3.org/2000/01/rdf-schema#comment> "A numerical expression derived from a borrower’s credit information that represents their creditworthiness and likelihood of meeting debt obligations." .
+<http://example.org/finrisk#CreditScore> <http://www.w3.org/2000/01/rdf-schema#label> "Credit Score" .
+# 
+# http://example.org/finrisk#Currency
+<http://example.org/finrisk#Currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Currency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#FinancialInstrument> .
+<http://example.org/finrisk#Currency> <http://www.w3.org/2000/01/rdf-schema#comment> "A system of money in common use, typically issued by a government or monetary authority, serving as a medium of exchange and unit of account." .
+<http://example.org/finrisk#Currency> <http://www.w3.org/2000/01/rdf-schema#label> "Currency" .
+# 
+# http://example.org/finrisk#DeathCertificate
+<http://example.org/finrisk#DeathCertificate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DeathCertificate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Certificate> .
+<http://example.org/finrisk#DeathCertificate> <http://www.w3.org/2000/01/rdf-schema#comment> "Original document certifying the circumstances of the death, or a certified copy or representation of the ensuing registration of that death." .
+<http://example.org/finrisk#DeathCertificate> <http://www.w3.org/2000/01/rdf-schema#label> "Death Certificate" .
+# 
+# http://example.org/finrisk#DebtBalance
+<http://example.org/finrisk#DebtBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DebtBalance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Balance> .
+<http://example.org/finrisk#DebtBalance> <http://www.w3.org/2000/01/rdf-schema#label> "Debt Balance" .
+# 
+# http://example.org/finrisk#DefaultNotice
+<http://example.org/finrisk#DefaultNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DefaultNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Notice> .
+<http://example.org/finrisk#DefaultNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "A notice given to a person before taking over an asset to recover the loan account, indicating failure to make required payments for a number of times." .
+<http://example.org/finrisk#DefaultNotice> <http://www.w3.org/2000/01/rdf-schema#label> "Default Notice" .
+# 
+# http://example.org/finrisk#DefaultRecoveryStage
+<http://example.org/finrisk#DefaultRecoveryStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DefaultRecoveryStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#DefaultRecoveryStage> <http://www.w3.org/2000/01/rdf-schema#label> "Default Recovery Stage" .
+# 
+# http://example.org/finrisk#DegradationInAssetValue
+<http://example.org/finrisk#DegradationInAssetValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DegradationInAssetValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#DegradationInAssetValue> <http://www.w3.org/2000/01/rdf-schema#label> "Degradation In Asset Value" .
+# 
+# http://example.org/finrisk#DelinquencyStatus
+<http://example.org/finrisk#DelinquencyStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DelinquencyStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#DelinquencyStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "A lifecycle stage representing that the loan is past due or in arrears, but not yet fully resolved or recovered." .
+<http://example.org/finrisk#DelinquencyStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Delinquency Status" .
+# 
+# http://example.org/finrisk#DepositAccount
+<http://example.org/finrisk#DepositAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DepositAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#InvestmentOrDepositAccount> .
+<http://example.org/finrisk#DepositAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "Account that provides a record of money placed with a depository institution for safekeeping and management." .
+<http://example.org/finrisk#DepositAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Deposit Account" .
+# 
+# http://example.org/finrisk#Derivative
+<http://example.org/finrisk#Derivative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Derivative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#FinancialInstrument> .
+<http://example.org/finrisk#Derivative> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial instrument whose value is derived from the value of one or more underlying assets, rates, or indices." .
+<http://example.org/finrisk#Derivative> <http://www.w3.org/2000/01/rdf-schema#label> "Derivative" .
+# 
+# http://example.org/finrisk#Document
+<http://example.org/finrisk#Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Document> <http://www.w3.org/2000/01/rdf-schema#comment> "Unitary expression of some realization of an intellectual or artistic work. A document, especially a legal document, may serve to establish one or several facts, and can be relied upon as a proof thereof." .
+<http://example.org/finrisk#Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document" .
+# 
+# http://example.org/finrisk#DocumentCheck
+<http://example.org/finrisk#DocumentCheck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DocumentCheck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#CreditCheck> .
+<http://example.org/finrisk#DocumentCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "A verification process confirming the authenticity, completeness, and validity of submitted identification and financial documents in a mortgage or loan application." .
+<http://example.org/finrisk#DocumentCheck> <http://www.w3.org/2000/01/rdf-schema#label> "Document Check" .
+# 
+# http://example.org/finrisk#DocumentCheckRisk
+<http://example.org/finrisk#DocumentCheckRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DocumentCheckRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#DocumentCheckRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk arising from inaccurate, falsified, or incomplete documentation provided during the mortgage or loan verification process." .
+<http://example.org/finrisk#DocumentCheckRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Document Check Risk" .
+# 
+# http://example.org/finrisk#DriverLicence
+<http://example.org/finrisk#DriverLicence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DriverLicence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#IdentityDocument> .
+<http://example.org/finrisk#DriverLicence> <http://www.w3.org/2000/01/rdf-schema#comment> "Official document stating that a person may operate a motorized vehicle on a public roadway or provides official identifying information for a non-driver." .
+<http://example.org/finrisk#DriverLicence> <http://www.w3.org/2000/01/rdf-schema#label> "Driver Licence" .
+# 
+# http://example.org/finrisk#DuePayment
+<http://example.org/finrisk#DuePayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#DuePayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#DuePayment> <http://www.w3.org/2000/01/rdf-schema#comment> "A payment that was made on or before its due date." .
+<http://example.org/finrisk#DuePayment> <http://www.w3.org/2000/01/rdf-schema#label> "Due Payment" .
+# 
+# http://example.org/finrisk#EarlyPayment
+<http://example.org/finrisk#EarlyPayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#EarlyPayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#EarlyPayment> <http://www.w3.org/2000/01/rdf-schema#comment> "A payment that was made before the due date." .
+<http://example.org/finrisk#EarlyPayment> <http://www.w3.org/2000/01/rdf-schema#label> "Early Payment" .
+# 
+# http://example.org/finrisk#Expenses
+<http://example.org/finrisk#Expenses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Expenses> <http://www.w3.org/2000/01/rdf-schema#comment> "Recurring or one-off monetary outflows incurred by a borrower or entity, such as living costs, debt repayments, or other financial obligations that reduce disposable income." .
+<http://example.org/finrisk#Expenses> <http://www.w3.org/2000/01/rdf-schema#label> "Expenses" .
+# 
+# http://example.org/finrisk#Exposure
+<http://example.org/finrisk#Exposure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Exposure> <http://www.w3.org/2000/01/rdf-schema#comment> "A state or condition in which an entity is subject to potential loss, harm, or risk due to its involvement in or relationship with another entity, activity, or event." .
+<http://example.org/finrisk#Exposure> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure" .
+# 
+# http://example.org/finrisk#FX
+<http://example.org/finrisk#FX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FX> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#FinancialProduct> .
+<http://example.org/finrisk#FX> <http://www.w3.org/2000/01/rdf-schema#comment> "The exchange of one currency for another, typically conducted through spot or derivative transactions in the foreign exchange market." .
+<http://example.org/finrisk#FX> <http://www.w3.org/2000/01/rdf-schema#label> "Foreign Exchange (FX)" .
+# 
+# http://example.org/finrisk#FeePayment
+<http://example.org/finrisk#FeePayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FeePayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#FeePayment> <http://www.w3.org/2000/01/rdf-schema#comment> "Payment of fees or charges." .
+<http://example.org/finrisk#FeePayment> <http://www.w3.org/2000/01/rdf-schema#label> "Fee Payment" .
+# 
+# http://example.org/finrisk#FinancialExposure
+<http://example.org/finrisk#FinancialExposure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FinancialExposure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Exposure> .
+<http://example.org/finrisk#FinancialExposure> <http://www.w3.org/2000/01/rdf-schema#comment> "The extent to which a party is subject to potential monetary loss arising from market movements, credit events, liquidity changes, or other financial risks." .
+<http://example.org/finrisk#FinancialExposure> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Exposure" .
+# 
+# http://example.org/finrisk#FinancialInstrument
+<http://example.org/finrisk#FinancialInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FinancialInstrument> <http://www.w3.org/2000/01/rdf-schema#comment> "A contractual arrangement that represents a financial asset to one party and a financial liability or equity instrument to another." .
+<http://example.org/finrisk#FinancialInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Instrument" .
+# 
+# http://example.org/finrisk#FinancialProduct
+<http://example.org/finrisk#FinancialProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FinancialProduct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Product> .
+<http://example.org/finrisk#FinancialProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "Product provided to consumers and businesses by a depository institution." .
+<http://example.org/finrisk#FinancialProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Product" .
+# 
+# http://example.org/finrisk#FinancialRecord
+<http://example.org/finrisk#FinancialRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FinancialRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Record> .
+<http://example.org/finrisk#FinancialRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A summary of all previous financial record for a person." .
+<http://example.org/finrisk#FinancialRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Financial Record" .
+# 
+# http://example.org/finrisk#FixedAmortisation
+<http://example.org/finrisk#FixedAmortisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FixedAmortisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Amortisation> .
+<http://example.org/finrisk#FixedAmortisation> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed Amortisation" .
+# 
+# http://example.org/finrisk#FixedInterest
+<http://example.org/finrisk#FixedInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FixedInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Interest> .
+<http://example.org/finrisk#FixedInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed Interest" .
+# 
+# http://example.org/finrisk#ForeclosureEvent
+<http://example.org/finrisk#ForeclosureEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ForeclosureEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Occurrence> .
+<http://example.org/finrisk#ForeclosureEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An event indicating taking over an asset due to failure of a number of payments." .
+<http://example.org/finrisk#ForeclosureEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Foreclosure Event" .
+# 
+# http://example.org/finrisk#FraudulentDocument
+<http://example.org/finrisk#FraudulentDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#FraudulentDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#FraudulentDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Fraudulent Document" .
+# 
+# http://example.org/finrisk#Guarantor
+<http://example.org/finrisk#Guarantor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Guarantor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Role> .
+<http://example.org/finrisk#Guarantor> <http://www.w3.org/2000/01/rdf-schema#comment> "A party that undertakes to fulfil the obligations of a borrower if that borrower fails to do so under the terms of a financial contract." .
+<http://example.org/finrisk#Guarantor> <http://www.w3.org/2000/01/rdf-schema#label> "Guarantor" .
+# 
+# http://example.org/finrisk#HighRiskLevel
+<http://example.org/finrisk#HighRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#HighRiskLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskLevel> .
+<http://example.org/finrisk#HighRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "High Risk Level" .
+# 
+# http://example.org/finrisk#IdentityDocument
+<http://example.org/finrisk#IdentityDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#IdentityDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LegalDocument> .
+<http://example.org/finrisk#IdentityDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Any legal document which may be used to verify aspects of a person's identity." .
+<http://example.org/finrisk#IdentityDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Identity Document" .
+# 
+# http://example.org/finrisk#Income
+<http://example.org/finrisk#Income> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Income> <http://www.w3.org/2000/01/rdf-schema#comment> "Any monetary amount received by an individual or entity from employment, investments, financial products, or other sources within a defined period. A key attribute influencing affordability, repayment capacity, and exposure to credit risk." .
+<http://example.org/finrisk#Income> <http://www.w3.org/2000/01/rdf-schema#label> "Income" .
+# 
+# http://example.org/finrisk#IncreaseCollateral
+<http://example.org/finrisk#IncreaseCollateral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#IncreaseCollateral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#IncreaseCollateral> <http://www.w3.org/2000/01/rdf-schema#label> "Increase Collateral" .
+# 
+# http://example.org/finrisk#IndexedInterest
+<http://example.org/finrisk#IndexedInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#IndexedInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Interest> .
+<http://example.org/finrisk#IndexedInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Indexed Interest" .
+# 
+# http://example.org/finrisk#InsecureApplication
+<http://example.org/finrisk#InsecureApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InsecureApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#InsecureApplication> <http://www.w3.org/2000/01/rdf-schema#label> "Insecure Application" .
+# 
+# http://example.org/finrisk#InsuranceCompany
+<http://example.org/finrisk#InsuranceCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InsuranceCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Organisation> .
+<http://example.org/finrisk#InsuranceCompany> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial institution that provides insurance services by underwriting risk in exchange for premiums, and compensates policyholders or beneficiaries in the event of specified losses or events." .
+<http://example.org/finrisk#InsuranceCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Insurance Company" .
+# 
+# http://example.org/finrisk#Interest
+<http://example.org/finrisk#Interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Interest> <http://www.w3.org/2000/01/rdf-schema#comment> "A charge for the use of borrowed money, typically expressed as a percentage of the principal amount over a specified period." .
+<http://example.org/finrisk#Interest> <http://www.w3.org/2000/01/rdf-schema#label> "Interest" .
+# 
+# http://example.org/finrisk#InterestOnlyAmortisation
+<http://example.org/finrisk#InterestOnlyAmortisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InterestOnlyAmortisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Amortisation> .
+<http://example.org/finrisk#InterestOnlyAmortisation> <http://www.w3.org/2000/01/rdf-schema#label> "Interest Only Amortisation" .
+# 
+# http://example.org/finrisk#InterestRateCalculation
+<http://example.org/finrisk#InterestRateCalculation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InterestRateCalculation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Calculation> .
+<http://example.org/finrisk#InterestRateCalculation> <http://www.w3.org/2000/01/rdf-schema#comment> "Event reflecting the calculation of interest." .
+<http://example.org/finrisk#InterestRateCalculation> <http://www.w3.org/2000/01/rdf-schema#label> "Interest Rate Calculation" .
+# 
+# http://example.org/finrisk#InterestRateReset
+<http://example.org/finrisk#InterestRateReset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InterestRateReset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Calculation> .
+<http://example.org/finrisk#InterestRateReset> <http://www.w3.org/2000/01/rdf-schema#comment> "Event reflecting a potential adjustment to an interest rate, typically corresponding to a change in the underlying benchmark interest rate or index specified in the contract." .
+<http://example.org/finrisk#InterestRateReset> <http://www.w3.org/2000/01/rdf-schema#label> "Interest Rate Reset" .
+# 
+# http://example.org/finrisk#InvestmentAccount
+<http://example.org/finrisk#InvestmentAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InvestmentAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#InvestmentOrDepositAccount> .
+<http://example.org/finrisk#InvestmentAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "Account that provides a record of deposits of funds and/or securities held at a financial institution. Objectives are typically long term growth, income or capital preservation from the deposited asset portfolio; investment accounts are typically not insured." .
+<http://example.org/finrisk#InvestmentAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Investment Account" .
+# 
+# http://example.org/finrisk#InvestmentOrDepositAccount
+<http://example.org/finrisk#InvestmentOrDepositAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#InvestmentOrDepositAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#InvestmentOrDepositAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Investment or Deposit Account" .
+# 
+# http://example.org/finrisk#LatePayment
+<http://example.org/finrisk#LatePayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LatePayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#LatePayment> <http://www.w3.org/2000/01/rdf-schema#comment> "A payment that was made after the indicated due date." .
+<http://example.org/finrisk#LatePayment> <http://www.w3.org/2000/01/rdf-schema#label> "Late Payment" .
+# 
+# http://example.org/finrisk#LatePaymentEvent
+<http://example.org/finrisk#LatePaymentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LatePaymentEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#LatePaymentEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Late Payment Event" .
+# 
+# http://example.org/finrisk#LatePaymentRisk
+<http://example.org/finrisk#LatePaymentRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LatePaymentRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#LatePaymentRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk that a borrower delays scheduled payments beyond their due date, causing potential penalties, interest accumulation, or credit score degradation." .
+<http://example.org/finrisk#LatePaymentRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Late Payment Risk" .
+# 
+# http://example.org/finrisk#LedgerAccount
+<http://example.org/finrisk#LedgerAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LedgerAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#LedgerAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "Account recorded in a general ledger." .
+<http://example.org/finrisk#LedgerAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Ledger Account" .
+# 
+# http://example.org/finrisk#LegalDocument
+<http://example.org/finrisk#LegalDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LegalDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Document> .
+<http://example.org/finrisk#LegalDocument> <http://www.w3.org/2000/01/rdf-schema#comment> "Document specifying the terms of, or providing evidence for, an agreement, attestation, certification, conditions, permissions, and/or decisions of legal persons, government entities, or courts of law." .
+<http://example.org/finrisk#LegalDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Legal Document" .
+# 
+# http://example.org/finrisk#Liability
+<http://example.org/finrisk#Liability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Liability> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial obligation or debt owed by a borrower or entity to another party, requiring future payments of cash, goods, or services." .
+<http://example.org/finrisk#Liability> <http://www.w3.org/2000/01/rdf-schema#label> "Liability" .
+# 
+# http://example.org/finrisk#LifeCycleStage
+<http://example.org/finrisk#LifeCycleStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LifeCycleStage> <http://www.w3.org/2000/01/rdf-schema#comment> "A distinct phase in the operational, contractual, or financial life of a product or service that delineates its status, activities, and responsibilities within an overall process." .
+<http://example.org/finrisk#LifeCycleStage> <http://www.w3.org/2000/01/rdf-schema#label> "Life Cycle Stage" .
+# 
+# http://example.org/finrisk#LoanAccount
+<http://example.org/finrisk#LoanAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LoanAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LoanOrCreditAccount> .
+<http://example.org/finrisk#LoanAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#CreditBalance> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#hasBalance> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#LoanAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#Arrears> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#hasArrears> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#LoanAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "An account established by a lender to record the principal, interest, and payment history associated with a specific loan granted to a borrower." .
+<http://example.org/finrisk#LoanAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Loan Account" .
+# 
+# http://example.org/finrisk#LoanOrCreditAccount
+<http://example.org/finrisk#LoanOrCreditAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LoanOrCreditAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#LoanOrCreditAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Loan or Credit Account" .
+# 
+# http://example.org/finrisk#LoanSchedule
+<http://example.org/finrisk#LoanSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LoanSchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#MortgageContract> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#belongsTo> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#LoanSchedule> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured plan that specifies the sequence, timing, and amount of payments required to repay a loan or mortgage." .
+<http://example.org/finrisk#LoanSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "Loan Schedule" .
+# 
+# http://example.org/finrisk#LoanServicing
+<http://example.org/finrisk#LoanServicing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LoanServicing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Occurrence> .
+<http://example.org/finrisk#LoanServicing> <http://www.w3.org/2000/01/rdf-schema#comment> "The ongoing management of the loan between disbursement and payoff." .
+<http://example.org/finrisk#LoanServicing> <http://www.w3.org/2000/01/rdf-schema#label> "Loan Servicing" .
+# 
+# http://example.org/finrisk#Location
+<http://example.org/finrisk#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographical place or position that can be identified within a spatial reference system." .
+<http://example.org/finrisk#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://example.org/finrisk#LowRiskLevel
+<http://example.org/finrisk#LowRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#LowRiskLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskLevel> .
+<http://example.org/finrisk#LowRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Low Risk Level" .
+# 
+# http://example.org/finrisk#MediumRiskLevel
+<http://example.org/finrisk#MediumRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MediumRiskLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskLevel> .
+<http://example.org/finrisk#MediumRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Medium Risk Level" .
+# 
+# http://example.org/finrisk#MissedPayment
+<http://example.org/finrisk#MissedPayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MissedPayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Payment> .
+<http://example.org/finrisk#MissedPayment> <http://www.w3.org/2000/01/rdf-schema#comment> "A payment that was not made." .
+<http://example.org/finrisk#MissedPayment> <http://www.w3.org/2000/01/rdf-schema#label> "Missed Payment" .
+# 
+# http://example.org/finrisk#MissingPaymentEvent
+<http://example.org/finrisk#MissingPaymentEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MissingPaymentEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskSource> .
+<http://example.org/finrisk#MissingPaymentEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Missing Payment Event" .
+# 
+# http://example.org/finrisk#MissingPaymentRisk
+<http://example.org/finrisk#MissingPaymentRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MissingPaymentRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#MissingPaymentRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The risk that a borrower fails to make one or more required loan or mortgage payments, resulting in arrears or default." .
+<http://example.org/finrisk#MissingPaymentRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Missing Payment Risk" .
+# 
+# http://example.org/finrisk#MitigateRisk
+<http://example.org/finrisk#MitigateRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MitigateRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#MitigateRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Mitigate Risk" .
+# 
+# http://example.org/finrisk#Mortgage
+<http://example.org/finrisk#Mortgage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Mortgage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#FinancialProduct> .
+<http://example.org/finrisk#Mortgage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#MortgageApplication> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#hasApplication> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#Mortgage> <http://www.w3.org/2000/01/rdf-schema#comment> "A loan secured by real property, under which the borrower gives the lender a lien on the property as collateral for the debt." .
+<http://example.org/finrisk#Mortgage> <http://www.w3.org/2000/01/rdf-schema#label> "Mortgage" .
+# 
+# http://example.org/finrisk#MortgageApplication
+<http://example.org/finrisk#MortgageApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MortgageApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#Person> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#hasApplicant> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#MortgageApplication> <http://www.w3.org/2000/01/rdf-schema#comment> "A formal request submitted by a borrower to a lender for a mortgage loan, including personal, financial, and property information used in credit and risk assessment." .
+<http://example.org/finrisk#MortgageApplication> <http://www.w3.org/2000/01/rdf-schema#label> "Mortgage Application" .
+# 
+# http://example.org/finrisk#MortgageContract
+<http://example.org/finrisk#MortgageContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MortgageContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ContractDocument> .
+<http://example.org/finrisk#MortgageContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#Asset> .
+_:genid6 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#holdsCollateral> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#MortgageContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#LoanAccount> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#opens> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#MortgageContract> <http://www.w3.org/2000/01/rdf-schema#comment> "A contract document detailing the contract for a mortgage, including parties, upfront payment, interest rate, late payment fees, arrears allowed before foreclose, start date, end date and collateral." .
+<http://example.org/finrisk#MortgageContract> <http://www.w3.org/2000/01/rdf-schema#label> "Mortgage Contract" .
+# 
+# http://example.org/finrisk#MortgageRisk
+<http://example.org/finrisk#MortgageRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#MortgageRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Risk> .
+<http://example.org/finrisk#MortgageRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "The potential for financial loss or adverse impact associated with a mortgage agreement, including credit, property, and payment-related uncertainties." .
+<http://example.org/finrisk#MortgageRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Mortgage Risk" .
+# 
+# http://example.org/finrisk#NegativeAmortisation
+<http://example.org/finrisk#NegativeAmortisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#NegativeAmortisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Amortisation> .
+<http://example.org/finrisk#NegativeAmortisation> <http://www.w3.org/2000/01/rdf-schema#label> "Negative Amortisation" .
+# 
+# http://example.org/finrisk#Notice
+<http://example.org/finrisk#Notice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Notice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Document> .
+<http://example.org/finrisk#Notice> <http://www.w3.org/2000/01/rdf-schema#comment> "Announcement, communication, intimation, or advance warning of something, usually, but not necessarily, to allow preparations to be made." .
+<http://example.org/finrisk#Notice> <http://www.w3.org/2000/01/rdf-schema#label> "Notice" .
+# 
+# http://example.org/finrisk#Occurrence
+<http://example.org/finrisk#Occurrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Occurrence> <http://www.w3.org/2000/01/rdf-schema#comment> "Happening of an Occurrence Kind, i.e., an event." .
+<http://example.org/finrisk#Occurrence> <http://www.w3.org/2000/01/rdf-schema#label> "Occurrence" .
+# 
+# http://example.org/finrisk#Organisation
+<http://example.org/finrisk#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "A large body of smaller institutes responsible for financial operations." .
+<http://example.org/finrisk#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation" .
+# 
+# http://example.org/finrisk#Passport
+<http://example.org/finrisk#Passport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Passport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#IdentityDocument> .
+<http://example.org/finrisk#Passport> <http://www.w3.org/2000/01/rdf-schema#comment> "Formal identity document, issued by a national government, which certifies the identity and nationality of its holder for the purpose of international travel." .
+<http://example.org/finrisk#Passport> <http://www.w3.org/2000/01/rdf-schema#label> "Passport" .
+# 
+# http://example.org/finrisk#Payment
+<http://example.org/finrisk#Payment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Payment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Transaction> .
+<http://example.org/finrisk#Payment> <http://www.w3.org/2000/01/rdf-schema#comment> "Delivery of money in fulfilment of an obligation, such as to satisfy a claim or debt." .
+<http://example.org/finrisk#Payment> <http://www.w3.org/2000/01/rdf-schema#label> "Payment" .
+# 
+# http://example.org/finrisk#PaymentAccount
+<http://example.org/finrisk#PaymentAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#PaymentAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Account> .
+<http://example.org/finrisk#PaymentAccount> <http://www.w3.org/2000/01/rdf-schema#comment> "An account used to execute payment transactions, such as the deposit and withdrawal of funds, and to store money available for immediate use through instruments like debit cards, transfers, or direct debits." .
+<http://example.org/finrisk#PaymentAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Payment Account" .
+# 
+# http://example.org/finrisk#Person
+<http://example.org/finrisk#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://example.org/finrisk#IdentityDocument> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://example.org/finrisk#hasID> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://example.org/finrisk#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being considered as an individual legal or natural person capable of entering into agreements and holding rights or obligations." .
+<http://example.org/finrisk#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://example.org/finrisk#Product
+<http://example.org/finrisk#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Commercially distributed good that is tangible property, the output of a production process, or something that passes through a distribution channel before being consumed or used." .
+<http://example.org/finrisk#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product" .
+# 
+# http://example.org/finrisk#Property
+<http://example.org/finrisk#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Asset> .
+<http://example.org/finrisk#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible or intangible thing owned by a person or organization, over which ownership rights or interests are held." .
+<http://example.org/finrisk#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
+# 
+# http://example.org/finrisk#PropertyInspection
+<http://example.org/finrisk#PropertyInspection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#PropertyInspection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#AssessmentEvent> .
+<http://example.org/finrisk#PropertyInspection> <http://www.w3.org/2000/01/rdf-schema#comment> "Event that involves analysing one or more aspects of a real property." .
+<http://example.org/finrisk#PropertyInspection> <http://www.w3.org/2000/01/rdf-schema#label> "Property Inspection" .
+# 
+# http://example.org/finrisk#PurchaseInsurance
+<http://example.org/finrisk#PurchaseInsurance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#PurchaseInsurance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#PurchaseInsurance> <http://www.w3.org/2000/01/rdf-schema#label> "Purchase Insurance" .
+# 
+# http://example.org/finrisk#Rating
+<http://example.org/finrisk#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#CreditScore> .
+<http://example.org/finrisk#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "A qualitative or quantitative evaluation assigned to an entity, asset, or exposure reflecting its credit quality, performance, or risk profile." .
+<http://example.org/finrisk#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://example.org/finrisk#Record
+<http://example.org/finrisk#Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Document> .
+<http://example.org/finrisk#Record> <http://www.w3.org/2000/01/rdf-schema#comment> "Memorialization and objective evidence of activities performed, events occurred, results achieved, or statements made, regardless of its characteristics, media, physical form, or the manner in which it is recorded or stored." .
+<http://example.org/finrisk#Record> <http://www.w3.org/2000/01/rdf-schema#label> "Record" .
+# 
+# http://example.org/finrisk#RecordCheck
+<http://example.org/finrisk#RecordCheck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#RecordCheck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#CreditCheck> .
+<http://example.org/finrisk#RecordCheck> <http://www.w3.org/2000/01/rdf-schema#comment> "An evaluation of an applicant’s past records or history, such as payment performance or legal standing, as part of a credit or mortgage assessment." .
+<http://example.org/finrisk#RecordCheck> <http://www.w3.org/2000/01/rdf-schema#label> "Record Check" .
+# 
+# http://example.org/finrisk#Report
+<http://example.org/finrisk#Report> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Report> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Document> .
+<http://example.org/finrisk#Report> <http://www.w3.org/2000/01/rdf-schema#comment> "Document that provides a structured description of something, prepared on ad hoc, periodic, recurring, regular, or as required basis." .
+<http://example.org/finrisk#Report> <http://www.w3.org/2000/01/rdf-schema#label> "Report" .
+# 
+# http://example.org/finrisk#ReschedulePayment
+<http://example.org/finrisk#ReschedulePayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ReschedulePayment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#ReschedulePayment> <http://www.w3.org/2000/01/rdf-schema#label> "Reschedule Payment" .
+# 
+# http://example.org/finrisk#Risk
+<http://example.org/finrisk#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "The possibility of an event or condition that, if it occurs, has a negative impact on objectives, outcomes, or value." .
+<http://example.org/finrisk#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk" .
+# 
+# http://example.org/finrisk#RiskAssessment
+<http://example.org/finrisk#RiskAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#RiskAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#AssessmentEvent> .
+<http://example.org/finrisk#RiskAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "An event indicating the evaluation of risk for a whole or part of a product life cycle." .
+<http://example.org/finrisk#RiskAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Assessment" .
+# 
+# http://example.org/finrisk#RiskLevel
+<http://example.org/finrisk#RiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#RiskLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "A qualitative or quantitative categorization of the magnitude or severity of a risk, typically derived from the combination of likelihood and impact assessments." .
+<http://example.org/finrisk#RiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Level" .
+# 
+# http://example.org/finrisk#RiskSource
+<http://example.org/finrisk#RiskSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#RiskSource> <http://www.w3.org/2000/01/rdf-schema#comment> "Sources of the risks associated with the lifecycle stages." .
+<http://example.org/finrisk#RiskSource> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Source" .
+# 
+# http://example.org/finrisk#RiskTreatment
+<http://example.org/finrisk#RiskTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#RiskTreatment> <http://www.w3.org/2000/01/rdf-schema#comment> "A process, action, or set of measures intended to modify a risk by reducing, avoiding, transferring, or accepting it." .
+<http://example.org/finrisk#RiskTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Treatment" .
+# 
+# http://example.org/finrisk#Role
+<http://example.org/finrisk#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A function, capacity, or position that a party assumes in a given context, defining its responsibilities, rights, or relationships." .
+<http://example.org/finrisk#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
+# 
+# http://example.org/finrisk#ServicingStage
+<http://example.org/finrisk#ServicingStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ServicingStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#ServicingStage> <http://www.w3.org/2000/01/rdf-schema#label> "Servicing Stage" .
+# 
+# http://example.org/finrisk#Stock
+<http://example.org/finrisk#Stock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Stock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#FinancialInstrument> .
+<http://example.org/finrisk#Stock> <http://www.w3.org/2000/01/rdf-schema#comment> "A financial instrument that signifies ownership interest in a company or entity, representing a claim on part of its assets and earnings." .
+<http://example.org/finrisk#Stock> <http://www.w3.org/2000/01/rdf-schema#label> "Equity Instrument (Stock)" .
+# 
+# http://example.org/finrisk#Transaction
+<http://example.org/finrisk#Transaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Transaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Occurrence> .
+<http://example.org/finrisk#Transaction> <http://www.w3.org/2000/01/rdf-schema#comment> "An event that indicates movement of finances in or out of an account." .
+<http://example.org/finrisk#Transaction> <http://www.w3.org/2000/01/rdf-schema#label> "Transaction" .
+# 
+# http://example.org/finrisk#TransactionRecord
+<http://example.org/finrisk#TransactionRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#TransactionRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Record> .
+<http://example.org/finrisk#TransactionRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "A record for all previous transactions made by a person." .
+<http://example.org/finrisk#TransactionRecord> <http://www.w3.org/2000/01/rdf-schema#label> "Transaction Record" .
+# 
+# http://example.org/finrisk#Transfer
+<http://example.org/finrisk#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#Transfer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Transaction> .
+<http://example.org/finrisk#Transfer> <http://www.w3.org/2000/01/rdf-schema#comment> "Transfer of funds between accounts." .
+<http://example.org/finrisk#Transfer> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer" .
+# 
+# http://example.org/finrisk#TransferOperation
+<http://example.org/finrisk#TransferOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#TransferOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#ControlAction> .
+<http://example.org/finrisk#TransferOperation> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer To" .
+# 
+# http://example.org/finrisk#TransferRisk
+<http://example.org/finrisk#TransferRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#TransferRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#RiskTreatment> .
+<http://example.org/finrisk#TransferRisk> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer Risk" .
+# 
+# http://example.org/finrisk#UnderwritingStage
+<http://example.org/finrisk#UnderwritingStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#UnderwritingStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#LifeCycleStage> .
+<http://example.org/finrisk#UnderwritingStage> <http://www.w3.org/2000/01/rdf-schema#label> "Underwriting Stage" .
+# 
+# http://example.org/finrisk#ValueAssessment
+<http://example.org/finrisk#ValueAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#ValueAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#AssessmentEvent> .
+<http://example.org/finrisk#ValueAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Assessment event to estimate the value of something." .
+<http://example.org/finrisk#ValueAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Value Assessment" .
+# 
+# http://example.org/finrisk#VariableInterest
+<http://example.org/finrisk#VariableInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/finrisk#VariableInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://example.org/finrisk#Interest> .
+<http://example.org/finrisk#VariableInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Interest" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/def/uom/ISO-8601/0/Gregorian
+<http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Friday
+<http://www.w3.org/2006/time#Friday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Monday
+<http://www.w3.org/2006/time#Monday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Saturday
+<http://www.w3.org/2006/time#Saturday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Sunday
+<http://www.w3.org/2006/time#Sunday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Thursday
+<http://www.w3.org/2006/time#Thursday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Tuesday
+<http://www.w3.org/2006/time#Tuesday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#Wednesday
+<http://www.w3.org/2006/time#Wednesday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitDay
+<http://www.w3.org/2006/time#unitDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitHour
+<http://www.w3.org/2006/time#unitHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitMinute
+<http://www.w3.org/2006/time#unitMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitMonth
+<http://www.w3.org/2006/time#unitMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitSecond
+<http://www.w3.org/2006/time#unitSecond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitWeek
+<http://www.w3.org/2006/time#unitWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3.org/2006/time#unitYear
+<http://www.w3.org/2006/time#unitYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
